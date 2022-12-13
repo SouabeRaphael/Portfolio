@@ -1,6 +1,344 @@
 @import './variables.scss';
 
-.test{
-    margin: 50px;
-    color: $color;
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: $font_ofelia_text;
+  font-size: 14px;
+  line-height: 1.5em;
+  color: black;
+  background-color: $white;
+  overflow: hidden;
+  cursor: none;
+}
+
+
+// backgroud noise
+// ---------------------------------------------------
+
+.bg_noise::before{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    opacity: 30%;
+    z-index: -1;
+    pointer-events: none;
+    background-image: url("../img/noise_giff.gif");
+}
+
+// custom cursor
+// ---------------------------------------------------
+
+.cursor {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.cursor::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 5px;
+    height: 5px;
+    background: black;
+    border-radius: 50%;
+}
+
+// header
+// ---------------------------------------------------
+
+.header{
+    position: fixed;
+    height: 150px;
+    width: 100%;
+    // background-color: $orange;
+    display: flex;
+    justify-content: center;
+
+    &_content-header{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &_figure_logo{
+        width: 72px;
+        height: 72px;
+    }
+
+    &_menu_burger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &_name{
+            font-family: $font_format_djr;
+            font-weight: 100;
+            font-size: 17px;
+            margin: 0;
+            margin-right: 20px;
+            color: black;
+        }
+
+        &_dot{
+            width: 20px;
+            height: 20px;
+            border-radius: 100px;
+            background-color: black;
+        }
+    }
+
+    & a {
+        text-decoration: none;
+    }
+}
+
+// home section
+// ---------------------------------------------------
+
+.home_section{
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+
+    & .home_section_left{
+        width: 100%;
+        height: auto;
+        transform: translateY(-25px);
+
+        & h1{
+            font-family: $font_format_djr;
+            font-size: $font_size_bigtitle;
+            line-height: 100%;
+            font-weight: 400;
+            letter-spacing: 8px;
+        }
+
+        & p{
+            font-family: $font_ofelia_text;
+            font-size: 1.5rem;
+            font-weight: 100;
+            margin-top: 50px;
+            letter-spacing: 2px;
+        }
+
+        & button{
+            border: 2px solid black;
+            font-size: 1.2rem;
+            background-color: transparent;
+            border-radius: 5px;
+            padding: 15px 25px;
+            letter-spacing: 2px;
+            margin-top: 30px;
+            font-weight: 400;
+        }
+    }
+
+    & .home_section_rigth{
+        width: 100%;
+
+        & .color_bg{
+            width: 100%;
+            height: 100%;
+
+        }
+
+        & .color_one{
+            width: 50rem;
+            height: 50rem;
+            position:  absolute;
+            z-index: -2;
+            top: calc(40% - 15rem);
+            left: calc(70% - 15rem);
+            background-image: -webkit-radial-gradient(50% 50%,circle contain,$blue,#2D445000 60%);
+            animation: 5s linear infinite colorOne;
+        }
+        & .color_two{
+            width: 50rem;
+            height: 50rem;
+            position: absolute;
+            z-index: -1;
+            top: calc(35% - 17rem);
+            left: calc(65% - 17rem);
+            background-image: -webkit-radial-gradient(50% 50%,circle contain,$orange,#E1675300 60%);
+            animation: 4s linear infinite colorTwo;
+        }
+    }
+
+    & .home_page_bottom{
+        position: fixed;
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        bottom: 30px;
+
+        & .container_network{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & .trait{
+                width: 27px;
+                height: 27px; 
+                display: flex;
+                justify-content: center;
+                align-items: center;  
+                // margin-right: 25px;       
+            }
+            & .trait span{
+                width: 100px;
+                height: 1px;
+                background-color: black;
+                transition: 0.3s;              
+            }
+            & .trait span.is-open{
+                transform: rotate(-90deg);               
+            }
+
+            & .trait span::after{
+                content: '';
+                position:relative;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                display: block;
+                background-color: black;
+                transition: 0.3s;
+            }
+            & .trait span.is-open::after{
+                transform: rotate(90deg);     
+            }
+
+            & .network{
+                display: inline-block;
+                vertical-align: middle;
+                overflow: hidden;
+                width: 100%;
+                height: 27px;
+                position: relative;
+            }
+
+            & .network ul{
+                height: 100%;
+                width: auto;
+                display: flex;
+                align-items: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin: 0;
+                transform: translateX(-400px);
+                transition: transform 1s cubic-bezier(0.50, 0.05, 0.1, 0.94);
+            }
+
+            & .network.is-open ul{
+                transform: translateX(0);
+                transition: transform 0.6s cubic-bezier(0.50, 0.05, 0.1, 0.94);
+            }
+
+            & a{
+                margin: 0;
+                margin-right: 25px;
+                font-family: $font_ofelia_text;
+                font-weight: 100;
+                font-size: 0.75rem;
+                letter-spacing: 2px;
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        & .sound{
+            width: auto;
+            height: auto;
+        }
+    }
+
+    & .home_page_scroll{
+        position: absolute;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 30px;
+        z-index: -1;
+
+        & .circle_arrow{
+            width: 50px;
+            height: 50px;
+            border: 1.5px solid black;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: bounce;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+
+            
+        }
+    }
+}
+
+  
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(5px);
+    }
+}
+
+@keyframes colorOne {
+    0% {
+        transform:translate(-40px)
+    }
+
+    50% {
+        transform:rotate(-180deg)translate(-40px)rotate(-180deg)scaleY(1.3)
+    }
+
+    to {
+        transform:rotate(-360deg)translate(-40px)rotate(-360deg)scale(1)
+    }
+}
+
+@keyframes colorTwo {
+    0% {
+        transform:translate(30px)
+    }
+
+    33% {
+        transform:rotate(180deg)translate(30px)rotate(-180deg)scaleX(1.4)
+    }
+
+    to {
+        transform:rotate(360deg)translate(30px)rotate(-360deg)scale(1)
+    }
 }
