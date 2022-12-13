@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio 2023",
+  "main": "index.js",
+  "scripts": {
+    "portfolio": "sass --watch ./assets/scss/input.scss:./assets/css/output.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SouabeRaphael/Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SouabeRaphael/Portfolio/issues"
+  },
+  "homepage": "https://github.com/SouabeRaphael/Portfolio#readme"
+}
