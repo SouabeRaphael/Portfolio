@@ -21,7 +21,7 @@ body {
   cursor: none;
 }
 
-
+// @@@
 // backgroud noise
 // ---------------------------------------------------
 
@@ -38,6 +38,7 @@ body {
     background-image: url("../img/noise_giff.gif");
 }
 
+// @@@
 // custom cursor
 // ---------------------------------------------------
 
@@ -63,6 +64,7 @@ body {
     border-radius: 50%;
 }
 
+// @@@
 // header
 // ---------------------------------------------------
 
@@ -171,6 +173,7 @@ body {
     }
 }
 
+// @@@
 // menu full screen
 // ---------------------------------------------------
 
@@ -294,7 +297,7 @@ body {
     transform: translateX(0);
 }
 
-
+// @@@
 // home section
 // ---------------------------------------------------
 
@@ -539,6 +542,9 @@ body {
     }
 }
 
+// @@@
+// about section
+// ---------------------------------------------------
 
 .about_section{
     width: 90%;
@@ -600,12 +606,12 @@ body {
 
         & figure{
             position: relative;
-            width: 430px;
-            height: 590px;
+            width: auto;
+            height: 100%;
 
             & img{
-                width: 100%;
-                height: 100%;
+                width: auto;
+                height: 590px;
             }
 
             & div {
@@ -707,6 +713,36 @@ body {
     }
 
 }
+@media (max-width: 1300px) {
+    .about_section{
+    
+        &_left{
+            width: 50%;
+            height: auto;
+            transform: translateY(60px);
+        }
+    
+        &_rigth{
+            justify-content: end;
+            padding-right: 50px;
+    
+            & figure{
+                width: auto;
+                height: 100%;
+
+                & img{
+                    width: auto;
+                    height: 450px;
+                }
+    
+                & div {
+                    width: 380px;
+                    height: 400px;
+                }
+            }
+        }
+    }
+}
 
 @media (max-width: 1100px) {
     .home_section{
@@ -758,6 +794,45 @@ body {
         }
     
     }
+
+    .about_section{
+        flex-direction: column;
+        &_left{
+            width: 80%;
+            height: auto;
+            transform: translateY(60px);
+            margin-bottom: 50px;
+    
+            & h2{
+                font-size: 2.8rem;
+                margin-bottom: 25px;
+            }
+    
+            & span{
+                font-size: 1rem;
+                font-weight: 100;
+            }
+            & p{
+                font-size: 1rem;
+            }
+    
+            & button{
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+        }
+        &_rigth{
+            width: auto;
+            padding-right: 0;
+        }
+    }
+}
+@media (max-width: 900px) {
+    .home_section{
+        & .home_page_scroll{
+            display: none;
+        }
+    }
 }
 @media (max-width: 800px) {
     .menu_full_screen{
@@ -799,6 +874,21 @@ body {
             }
         }
     }
+
+    .about_section{
+        &_left{
+            & h2{
+                font-size: 2.2rem;
+            }
+    
+            & span{
+                font-size: 1rem;
+            }
+            & p{
+                font-size: 1rem;
+            }
+        }
+    }
 }
 @media (max-width: 700px) {
     .menu_full_screen{
@@ -814,18 +904,11 @@ body {
         & .img_item_nav{
             display: none;
             & img{
-                width: 200px;
+                width: auto;
                 height: 250px;
             }
         }
     
-    }
-}
-@media (max-width: 900px) {
-    .home_section{
-        & .home_page_scroll{
-            display: none;
-        }
     }
 }
 
@@ -860,7 +943,9 @@ body {
             }
         }
     
-    }.menu_full_screen{
+    }
+    
+    .menu_full_screen{
         width: 100%;
         // justify-content: center;
         transform: translateX(150%);
@@ -919,6 +1004,52 @@ body {
             }
         }
 
+    }
+
+    .about_section{
+        flex-direction: column;
+        &_left{
+            width: 85%;
+            height: auto;
+            transform: translateY(60px);
+            margin-bottom: 50px;
+    
+            & h2{
+                font-size: 1.8rem;
+                margin-bottom: 25px;
+            }
+    
+            & span{
+                font-size: 0.95rem;
+                font-weight: 100;
+            }
+            & p{
+                font-size: 0.95rem;
+            }
+    
+            & button{
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+        }
+        &_rigth{
+            width: 85%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & figure{
+    
+                & img{
+                    width: auto;
+                    height: 350px;
+                }
+    
+                & div {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+        }
     }
 }
 @media (max-width: 400px) {
