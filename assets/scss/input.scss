@@ -742,6 +742,29 @@ body {
             }
         }
     }
+
+    .skills_section{
+        &_left, &_rigth{
+    
+            & .skills_item{
+                width: 90%;
+                
+                &_title{
+        
+                    & figure{
+                        width: 70px;
+                        height: 70px;
+
+                        & img{
+                            width: auto;
+                            height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
 }
 
 @media (max-width: 1100px) {
@@ -762,6 +785,15 @@ body {
                 padding: 10px 20px;
             }
         }
+    }
+
+    .skills_section{
+        margin-top: 150px;
+    
+        &_container{
+            flex-direction: column;
+        }
+    
     }
 }
 @media (max-width: 1000px) {
@@ -889,6 +921,14 @@ body {
             }
         }
     }
+
+    .skills_section{
+        transform: translateY(200px);
+
+        & h2{
+            font-size: 2.5rem;
+        }
+    }
 }
 @media (max-width: 700px) {
     .menu_full_screen{
@@ -910,8 +950,49 @@ body {
         }
     
     }
-}
 
+    .skills_section{
+
+        &_container{
+            margin-top: 20px;
+        }
+
+        & h2{
+            font-size: 2.2rem;
+        }
+    }
+}
+@media (max-width: 600px){
+    .skills_section{
+        &_left, &_rigth{
+    
+            & .skills_item{
+                width: 90%;
+                
+                &_title{
+        
+                    & figure{
+                        width: 60px;
+                        height: 60px;
+
+                        & img{
+                            width: auto;
+                            height: 22px;
+                        }
+                    }
+        
+                    & .title_skills{
+                        font-size: 1rem;
+                    }
+                }
+        
+                & .description_skills {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
 @media (max-width: 500px) {
     .header{
 
@@ -1050,6 +1131,18 @@ body {
                 }
             }
         }
+    }
+
+    .skills_section{
+
+        & h2{
+            font-size: 2rem;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .about_section{
+        margin-top: 100px;
     }
 }
 @media (max-width: 400px) {
