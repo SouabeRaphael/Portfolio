@@ -601,6 +601,141 @@ body {
   margin-top: 20px;
 }
 
+.project_section {
+  width: 90%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+.project_section h2 {
+  width: 100%;
+  text-align: start;
+  font-family: forma-djr-banner, sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 8px;
+  margin-top: 30px;
+}
+.project_section .arrow_carrousel {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.project_section .arrow_carrousel img:nth-child(2) {
+  margin-left: 40px;
+}
+.project_section_container_carrousel {
+  width: 100vw;
+  height: 100%;
+  margin-top: 50px;
+}
+.project_section_container_carrousel .carrousel {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-content: center;
+  transform: translate(5%, 0%);
+  -webkit-user-select: none;
+}
+.project_section_container_carrousel .carrousel a {
+  text-decoration: none;
+  margin-left: 40px;
+}
+.project_section_container_carrousel .carrousel_item {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 390px;
+  height: 530px;
+  background-color: #761818;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: transform 0.6s ease;
+}
+.project_section_container_carrousel .carrousel_item .image_project {
+  position: absolute;
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 90% 50%;
+  z-index: 0;
+}
+.project_section_container_carrousel .carrousel_item .name {
+  width: auto;
+  height: auto;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.8s ease;
+}
+.project_section_container_carrousel .carrousel_item .name .line_name {
+  height: 1px;
+  width: auto;
+  background-color: white;
+  z-index: 1;
+}
+.project_section_container_carrousel .carrousel_item .name_project {
+  font-family: ofelia-text, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: white;
+  z-index: 1;
+}
+.project_section_container_carrousel .carrousel_item .categories_project {
+  font-family: ofelia-text, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: white;
+  margin-top: 22px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+.project_section_container_carrousel .carrousel .carrousel_item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  z-index: 1;
+}
+.project_section_container_carrousel .carrousel_item:hover::before {
+  opacity: 40%;
+}
+.project_section_container_carrousel .carrousel_item:hover {
+  transform: scale(0.98);
+}
+.project_section_container_carrousel .carrousel_item:hover .name {
+  opacity: 1;
+}
+.project_section_container_carrousel .carrousel_item:hover .categories_project {
+  opacity: 1;
+}
+.project_section_container_carrousel .carrousel a:nth-child(1) {
+  margin-left: 0;
+}
+.project_section_container_carrousel .carrousel::-webkit-scrollbar {
+  width: 0;
+}
+.project_section_container_carrousel .carrousel.glissade {
+  transition: left 0.8s ease-out;
+}
+
 @media (max-width: 1300px) {
   .about_section_left {
     width: 50%;
@@ -886,6 +1021,24 @@ body {
 @media (max-width: 480px) {
   .about_section {
     margin-top: 100px;
+  }
+  .skills_section {
+    transform: translateY(300px);
+  }
+  .skills_section h2 {
+    font-size: 1.4rem;
+  }
+  .skills_section_left .skills_item_title .skills_item_design, .skills_section_rigth .skills_item_title .skills_item_design {
+    width: 60px;
+    height: 60px;
+  }
+  .skills_section_left .skills_item_title .skills_item_design img, .skills_section_rigth .skills_item_title .skills_item_design img {
+    width: auto;
+    height: 18px;
+  }
+  .skills_section_left .skills_item_title .title_skills, .skills_section_rigth .skills_item_title .title_skills {
+    width: 60%;
+    font-size: 1rem;
   }
 }
 @media (max-width: 400px) {

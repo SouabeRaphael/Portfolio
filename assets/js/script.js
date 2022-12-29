@@ -100,3 +100,67 @@ function getSound(){
         icon_sound.src = "./assets/img/Icon feather-volume-x.svg";
     }
 }
+
+// scroll project section
+// ----------------------------------------------------
+
+// with button
+// -------------------------
+let scroll = document.querySelector('.project_section_container_carrousel')
+let carrousel = document.querySelector(('.carrousel'));
+
+let btnNext = document.querySelector('.next_arrow');
+let btnBack = document.querySelector('.back_arrow');
+let test = 0;
+btnNext.addEventListener('click', () => {
+    test -= 30;
+    carrousel.animate({
+        transform: `translate(${test}%, 0%)`}, {
+            duration: 600, fill: "forwards"});
+})
+btnBack.addEventListener('click', () => {
+    // carrousel.scrollBy(-350, 0);
+    test += 30;
+    carrousel.animate({
+        transform: `translate(${test}%, 0%)`}, {
+            duration: 600, fill: "forwards"});
+})
+
+
+// with dragging
+// ---------------------
+const slide = document.querySelector('.carrousel');
+const images = document.querySelectorAll(".image_project")
+
+window.onmousedown = e =>{
+    slide.dataset.mouseDownAt = e.clientX;
+}
+
+window.onmousemove = e => {
+    if(slide.dataset.mouseDownAt === "0") return;
+
+    const mouseDelta = parseFloat(slide.dataset.mouseDownAt) - e.clientX,
+        maxDelta  = window.innerWidth / 2;
+
+    const percentage = (mouseDelta / maxDelta) * -100,
+        nextPercentageUnconstrained = parseFloat(slide.dataset.prevPercentage) + percentage,
+        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 5), -150);
+
+    slide.dataset.percentage = nextPercentage;
+    // slide.style.transform = `translate(${nextPercentage}%, 0%)`;
+    slide.animate({
+        transform: `translate(${nextPercentage}%, 0%)`}, {
+            duration: 600, fill: "forwards"});
+
+    for(const image of images){
+        // image.style.objectPosition = `${nextPercentage + 90}% 50%`;
+        image.animate({
+            objectPosition: `${nextPercentage + 90}% 50%`}, {
+            duration: 800, fill: "forwards"});
+    }
+}
+
+window.onmouseup = () =>{
+    slide.dataset.mouseDownAt = "0";
+    slide.dataset.prevPercentage = slide.dataset.percentage;
+}
