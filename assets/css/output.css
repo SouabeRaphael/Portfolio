@@ -602,6 +602,7 @@ body {
 }
 
 .project_section {
+  position: relative;
   width: 90%;
   height: 90vh;
   display: flex;
@@ -617,7 +618,26 @@ body {
   font-size: 3rem;
   font-weight: 400;
   letter-spacing: 8px;
-  margin-top: 30px;
+  margin-top: 80px;
+}
+.project_section .line_scroll {
+  position: absolute;
+  height: 2px;
+  width: 5%;
+  top: 94%;
+  left: 30%;
+  background-color: black;
+  border-radius: 50px;
+}
+.project_section .line_scroll_2 {
+  position: absolute;
+  height: 2px;
+  width: 43.5%;
+  top: 94%;
+  left: 30%;
+  background-color: black;
+  border-radius: 50px;
+  opacity: 50%;
 }
 .project_section .arrow_carrousel {
   width: 100%;
@@ -631,7 +651,7 @@ body {
 .project_section_container_carrousel {
   width: 100vw;
   height: 100%;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .project_section_container_carrousel .carrousel {
   position: relative;
@@ -667,7 +687,7 @@ body {
   max-width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 90% 50%;
+  object-position: 100% 50%;
   z-index: 0;
 }
 .project_section_container_carrousel .carrousel_item .name {
@@ -734,6 +754,41 @@ body {
 }
 .project_section_container_carrousel .carrousel.glissade {
   transition: left 0.8s ease-out;
+}
+
+.content-footer {
+  width: 95%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.content-footer a {
+  text-decoration: none;
+}
+.content-footer_email {
+  display: block;
+  font-family: forma-djr-banner, sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  margin: 0;
+  color: black;
+  letter-spacing: 2px;
+}
+.content-footer_name {
+  display: block;
+  font-family: forma-djr-banner, sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  margin: 0;
+  color: black;
+  letter-spacing: 2px;
+}
+.content-footer_network img {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
 }
 
 @media (max-width: 1300px) {

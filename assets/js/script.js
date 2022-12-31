@@ -103,40 +103,88 @@ function getSound(){
 
 // scroll project section
 // ----------------------------------------------------
+const images = document.querySelectorAll(".image_project")
+const slide = document.querySelector('.carrousel');
+let line_scroll = document.querySelector('.line_scroll');
 
 // with button
 // -------------------------
 let scroll = document.querySelector('.project_section_container_carrousel')
-let carrousel = document.querySelector(('.carrousel'));
 
 let btnNext = document.querySelector('.next_arrow');
 let btnBack = document.querySelector('.back_arrow');
-let test = 0;
+
+let currentPosition = 5;
+let calcLimit = 5;
+let position;
+let test = 90;
+
+
 btnNext.addEventListener('click', () => {
-    test -= 30;
-    carrousel.animate({
-        transform: `translate(${test}%, 0%)`}, {
+    currentPosition -= 30;
+    test -= 20;
+
+    calcLimit = Math.max(Math.min(currentPosition, 5), -77);
+    position = `translate(${calcLimit}%, 0%)`;
+
+    if(calcLimit == -77){
+        currentPosition = -77;
+        test = 40;
+    }
+
+    slide.animate({
+        transform: `${position}`}, {
             duration: 600, fill: "forwards"});
+
+    for(const image of images){
+        // image.style.objectPosition = `${nextPercentage + 90}% 50%`;
+        image.animate({
+            objectPosition: `${test}% 50%`}, {
+            duration: 600, fill: "forwards"});
+        }
+
+    line_scroll.animate({
+        width: `${5 + -calcLimit / 2}%`}, {
+        duration: 800, fill: "forwards"});
+
 })
+
 btnBack.addEventListener('click', () => {
-    // carrousel.scrollBy(-350, 0);
-    test += 30;
-    carrousel.animate({
-        transform: `translate(${test}%, 0%)`}, {
+    currentPosition += 30;
+    test += 10;
+
+    calcLimit = Math.max(Math.min(currentPosition, 5), -77);
+    position = `translate(${calcLimit}%, 0%)`;
+
+    if(calcLimit == 5){
+        currentPosition = 5;
+        test = 90;
+    }
+
+    slide.animate({
+        transform: `${position}`}, {
             duration: 600, fill: "forwards"});
+    
+    for(const image of images){
+        // image.style.objectPosition = `${nextPercentage + 90}% 50%`;
+        image.animate({
+            objectPosition: `${test}% 50%`}, {
+            duration: 600, fill: "forwards"});
+        }
+    
+    line_scroll.animate({
+        width: `${5 + -calcLimit / 2}%`}, {
+        duration: 800, fill: "forwards"});
 })
 
 
 // with dragging
 // ---------------------
-const slide = document.querySelector('.carrousel');
-const images = document.querySelectorAll(".image_project")
-
-window.onmousedown = e =>{
+slide.onmousedown = e =>{
     slide.dataset.mouseDownAt = e.clientX;
 }
 
-window.onmousemove = e => {
+slide.onmousemove = e => {
     if(slide.dataset.mouseDownAt === "0") return;
 
     const mouseDelta = parseFloat(slide.dataset.mouseDownAt) - e.clientX,
@@ -144,7 +192,7 @@ window.onmousemove = e => {
 
     const percentage = (mouseDelta / maxDelta) * -100,
         nextPercentageUnconstrained = parseFloat(slide.dataset.prevPercentage) + percentage,
-        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 5), -150);
+        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 5), -77);
 
     slide.dataset.percentage = nextPercentage;
     // slide.style.transform = `translate(${nextPercentage}%, 0%)`;
@@ -158,9 +206,16 @@ window.onmousemove = e => {
             objectPosition: `${nextPercentage + 90}% 50%`}, {
             duration: 800, fill: "forwards"});
     }
+
+    // line_scroll.style.width = `${5 + -nextPercentage / 2}%`;
+    line_scroll.animate({
+        width: `${5 + -nextPercentage / 2}%`}, {
+            duration: 800, fill: "forwards"});
+
 }
 
-window.onmouseup = () =>{
+slide.onmouseup = () =>{
     slide.dataset.mouseDownAt = "0";
     slide.dataset.prevPercentage = slide.dataset.percentage;
 }
+

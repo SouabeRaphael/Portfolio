@@ -630,6 +630,10 @@ body {
     }
 }
 
+// @@@
+// skills section
+// ---------------------------------------------------
+
 .skills_section{
     width: 90%;
     height: 100vh;
@@ -714,7 +718,12 @@ body {
 
 }
 
+// @@@
+// projects section
+// ---------------------------------------------------
+
 .project_section{
+    position: relative;
     width: 90%;
     height: 90vh;
     display: flex;
@@ -730,7 +739,27 @@ body {
         font-size: $font_size_title;
         font-weight: 400;
         letter-spacing: 8px;
-        margin-top: 30px;
+        margin-top: 80px;
+    }
+
+    & .line_scroll{
+        position: absolute;
+        height: 2px;
+        width: 5%;
+        top: 94%;
+        left: 30%;
+        background-color: black;
+        border-radius: 50px;
+    }
+    & .line_scroll_2{
+        position: absolute;
+        height: 2px;
+        width: 43.5%;
+        top: 94%;
+        left: 30%;
+        background-color: black;
+        border-radius: 50px;
+        opacity: 50%;
     }
 
     & .arrow_carrousel{
@@ -747,7 +776,7 @@ body {
     &_container_carrousel{
         width: 100vw;
         height: 100%;
-        margin-top: 50px;
+        margin-top: 30px;
 
         & .carrousel{
             position: relative;
@@ -785,7 +814,7 @@ body {
                     max-width: 100%;
                     height: 100%;
                     object-fit:cover;
-                    object-position: 90% 50%;
+                    object-position: 100% 50%;
                     z-index: 0;
                 }
 
@@ -867,6 +896,53 @@ body {
         }
     }
 
+}
+
+// @@@
+// footer
+// ---------------------------------------------------
+
+.content-footer{
+    width: 95%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+    & a {
+        text-decoration: none;
+    }
+
+    &_email {
+        display: block;
+        font-family: $font_format_djr; 
+        font-weight: 100;
+        font-size: 14px;
+        margin: 0;        
+        color: black;
+        letter-spacing: 2px;    
+    }
+
+    &_name {
+        display: block;
+        font-family: $font_format_djr; 
+        font-weight: 100;
+        font-size: 14px;
+        margin: 0;
+        color: black;
+        letter-spacing: 2px;    
+    }
+
+    &_network{
+
+        & img{
+            width: 20px;
+            height: 20px;
+            margin-left: 20px;
+        }
+    }
+    
 }
 
 
