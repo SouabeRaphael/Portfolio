@@ -124,11 +124,11 @@ btnNext.addEventListener('click', () => {
     currentPosition -= 30;
     test -= 20;
 
-    calcLimit = Math.max(Math.min(currentPosition, 5), -77);
+    calcLimit = Math.max(Math.min(currentPosition, 0), -90);
     position = `translate(${calcLimit}%, 0%)`;
 
-    if(calcLimit == -77){
-        currentPosition = -77;
+    if(calcLimit == -90){
+        currentPosition = -90;
         test = 40;
     }
 
@@ -144,7 +144,7 @@ btnNext.addEventListener('click', () => {
         }
 
     line_scroll.animate({
-        width: `${5 + -calcLimit / 2}%`}, {
+        width: `${3 + -calcLimit / 2.5}%`}, {
         duration: 800, fill: "forwards"});
 
 })
@@ -153,11 +153,11 @@ btnBack.addEventListener('click', () => {
     currentPosition += 30;
     test += 10;
 
-    calcLimit = Math.max(Math.min(currentPosition, 5), -77);
+    calcLimit = Math.max(Math.min(currentPosition, 0), -90);
     position = `translate(${calcLimit}%, 0%)`;
 
-    if(calcLimit == 5){
-        currentPosition = 5;
+    if(calcLimit == 0){
+        currentPosition = 0;
         test = 90;
     }
 
@@ -173,18 +173,18 @@ btnBack.addEventListener('click', () => {
         }
     
     line_scroll.animate({
-        width: `${5 + -calcLimit / 2}%`}, {
+        width: `${3 + -calcLimit / 2.5}%`}, {
         duration: 800, fill: "forwards"});
 })
 
 
 // with dragging
 // ---------------------
-slide.onmousedown = e =>{
+slide.onpointerdown = e =>{
     slide.dataset.mouseDownAt = e.clientX;
 }
 
-slide.onmousemove = e => {
+slide.onpointermove = e => {
     if(slide.dataset.mouseDownAt === "0") return;
 
     const mouseDelta = parseFloat(slide.dataset.mouseDownAt) - e.clientX,
@@ -192,7 +192,7 @@ slide.onmousemove = e => {
 
     const percentage = (mouseDelta / maxDelta) * -100,
         nextPercentageUnconstrained = parseFloat(slide.dataset.prevPercentage) + percentage,
-        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 5), -77);
+        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -90);
 
     slide.dataset.percentage = nextPercentage;
     // slide.style.transform = `translate(${nextPercentage}%, 0%)`;
@@ -209,13 +209,19 @@ slide.onmousemove = e => {
 
     // line_scroll.style.width = `${5 + -nextPercentage / 2}%`;
     line_scroll.animate({
-        width: `${5 + -nextPercentage / 2}%`}, {
+        width: `${3 + -nextPercentage / 2.5}%`}, {
             duration: 800, fill: "forwards"});
 
 }
 
-slide.onmouseup = () =>{
+slide.onpointerup = () =>{
     slide.dataset.mouseDownAt = "0";
     slide.dataset.prevPercentage = slide.dataset.percentage;
 }
 
+if(screen.width <= 1100){
+    slide.style.overflow = "scroll";
+}
+else{
+    slide.style.overflow = "none";
+}
