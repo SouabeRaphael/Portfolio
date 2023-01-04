@@ -1,3 +1,32 @@
+// loader script
+// ----------------------------------------------------
+
+let preloader = document.querySelector('.preloader');
+let percentage_loader = document.querySelector('.loader');
+let circle = document.querySelector('.preloader svg path');
+
+let counter = 0;
+let c = 0;
+
+let i = setInterval(function () {
+
+    percentage_loader.innerHTML = counter + '%';
+    circle.style.strokeDasharray = `${counter} 100`;
+    counter++;
+
+    if(counter == 101){
+        clearInterval(i);
+        setTimeout(() => {
+            preloader.style.transform = `translateY(-100%)`
+        }, 300);
+
+        // setTimeout(() => {
+        //     preloader.style.visibility = "hidden";
+        // }, 1000);
+    }
+
+}, 30);
+
 
 
 // cursor script
@@ -16,6 +45,8 @@ let menu_burger = document.querySelector('.header_menu_burger');
 let menu_burger_name = document.querySelector('.header_menu_burger .header_menu_burger_name');
 let menu_burger_name_close = document.querySelector('.header_menu_burger .header_menu_burger_name_close');
 let menu_full_screen = document.querySelector('.menu_full_screen');
+let logo_black = document.querySelector('.header_logo_back');
+let logo_white = document.querySelector('.header_logo_white');
 
 menu_burger.addEventListener('click', openMenu);
 
@@ -23,6 +54,8 @@ function openMenu(){
     console.log('coucouy');
     menu_full_screen.classList.toggle('open');
     menu_burger.classList.toggle('open');
+    logo_black.classList.toggle('open');
+    logo_white.classList.toggle('open');
 
     menu_burger_name.classList.toggle('close');
     menu_burger_name_close.classList.toggle('close');
@@ -103,11 +136,10 @@ function getSound(){
     }
 }
 
-function test(){
+function slider(slide){
     // scroll project section
     // ----------------------------------------------------
     const images = document.querySelectorAll(".image_project")
-    const slide = document.querySelector('.carrousel');
     let line_scroll = document.querySelector('.line_scroll');
 
     // with button
@@ -226,15 +258,18 @@ function test(){
 
 // change overflow for mobile
 // -------------------------------------
-const slide = document.querySelector('.carrousel');
-if(screen.width <= 1100){
-    slide.style.overflow = "scroll";
-}
-else{
-    slide.style.overflow = "none";
-    test();
-}
+function change_overflow(){
+    let slide = document.querySelector('.carrousel');
 
+    if(screen.width <= 1100){
+        slide.style.overflow = "scroll";
+    }
+    else{
+        slide.style.overflow = "none";
+        slider(slide);
+    }
+}
+change_overflow();
 
 // affichage bottom page, network and sound
 // ---------------------------------------------------------------
@@ -251,3 +286,7 @@ window.addEventListener('scroll', () => {
         page_bottom.style.opacity = 100;
     }
 })
+
+
+let t = document.querySelector('.header_logo');
+t.style.fill = "#E16753";
