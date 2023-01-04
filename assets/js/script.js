@@ -63,7 +63,7 @@ console.log(trait_span)
 trait.addEventListener('click', functionNetwrok);
 
 function functionNetwrok(){
-    console.log('coucou');
+    // console.log('coucou');
     trait_span.classList.toggle('is-open');
     network.classList.toggle('is-open');
 }
@@ -81,6 +81,8 @@ function changeNetwork_scroll(){
         network.classList.add('is-open');
     }
 }
+
+
 // audio
 // ----------------------------------------------------
 
@@ -101,127 +103,151 @@ function getSound(){
     }
 }
 
-// scroll project section
-// ----------------------------------------------------
-const images = document.querySelectorAll(".image_project")
+function test(){
+    // scroll project section
+    // ----------------------------------------------------
+    const images = document.querySelectorAll(".image_project")
+    const slide = document.querySelector('.carrousel');
+    let line_scroll = document.querySelector('.line_scroll');
+
+    // with button
+    // -------------------------
+    let scroll = document.querySelector('.project_section_container_carrousel')
+
+    let btnNext = document.querySelector('.next_arrow');
+    let btnBack = document.querySelector('.back_arrow');
+
+    let currentPosition = 5;
+    let calcLimit = 5;
+    let position;
+    let test = 90;
+
+
+    btnNext.addEventListener('click', () => {
+        currentPosition -= 30;
+        test -= 20;
+
+        calcLimit = Math.max(Math.min(currentPosition, 0), -90);
+        position = `translate(${calcLimit}%, 0%)`;
+
+        if(calcLimit == -90){
+            currentPosition = -90;
+            test = 40;
+        }
+
+        slide.animate({
+            transform: `${position}`}, {
+                duration: 600, fill: "forwards"});
+
+        for(const image of images){
+            // image.style.objectPosition = `${nextPercentage + 90}% 50%`;
+            image.animate({
+                objectPosition: `${test}% 50%`}, {
+                duration: 600, fill: "forwards"});
+            }
+
+        line_scroll.animate({
+            width: `${3 + -calcLimit / 2.5}%`}, {
+            duration: 800, fill: "forwards"});
+
+    })
+
+    btnBack.addEventListener('click', () => {
+        currentPosition += 30;
+        test += 10;
+
+        calcLimit = Math.max(Math.min(currentPosition, 0), -90);
+        position = `translate(${calcLimit}%, 0%)`;
+
+        if(calcLimit == 0){
+            currentPosition = 0;
+            test = 90;
+        }
+
+        slide.animate({
+            transform: `${position}`}, {
+                duration: 600, fill: "forwards"});
+        
+        for(const image of images){
+            // image.style.objectPosition = `${nextPercentage + 90}% 50%`;
+            image.animate({
+                objectPosition: `${test}% 50%`}, {
+                duration: 600, fill: "forwards"});
+            }
+        
+        line_scroll.animate({
+            width: `${3 + -calcLimit / 2.5}%`}, {
+            duration: 800, fill: "forwards"});
+    })
+
+
+    // with dragging
+    // ---------------------
+    slide.onpointerdown = e =>{
+        slide.dataset.mouseDownAt = e.clientX;
+    }
+
+    slide.onpointermove = e => {
+        if(slide.dataset.mouseDownAt === "0") return;
+
+        const mouseDelta = parseFloat(slide.dataset.mouseDownAt) - e.clientX,
+            maxDelta  = window.innerWidth / 2;
+
+        const percentage = (mouseDelta / maxDelta) * -100,
+            nextPercentageUnconstrained = parseFloat(slide.dataset.prevPercentage) + percentage,
+            nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -90);
+
+        slide.dataset.percentage = nextPercentage;
+        // slide.style.transform = `translate(${nextPercentage}%, 0%)`;
+        slide.animate({
+            transform: `translate(${nextPercentage}%, 0%)`}, {
+                duration: 600, fill: "forwards"});
+
+        for(const image of images){
+            // image.style.objectPosition = `${nextPercentage + 90}% 50%`;
+            image.animate({
+                objectPosition: `${nextPercentage + 90}% 50%`}, {
+                duration: 800, fill: "forwards"});
+        }
+
+        // line_scroll.style.width = `${5 + -nextPercentage / 2}%`;
+        line_scroll.animate({
+            width: `${3 + -nextPercentage / 2.5}%`}, {
+                duration: 800, fill: "forwards"});
+
+    }
+
+    slide.onpointerup = () =>{
+        slide.dataset.mouseDownAt = "0";
+        slide.dataset.prevPercentage = slide.dataset.percentage;
+    }
+}
+
+
+// change overflow for mobile
+// -------------------------------------
 const slide = document.querySelector('.carrousel');
-let line_scroll = document.querySelector('.line_scroll');
-
-// with button
-// -------------------------
-let scroll = document.querySelector('.project_section_container_carrousel')
-
-let btnNext = document.querySelector('.next_arrow');
-let btnBack = document.querySelector('.back_arrow');
-
-let currentPosition = 5;
-let calcLimit = 5;
-let position;
-let test = 90;
-
-
-btnNext.addEventListener('click', () => {
-    currentPosition -= 30;
-    test -= 20;
-
-    calcLimit = Math.max(Math.min(currentPosition, 0), -90);
-    position = `translate(${calcLimit}%, 0%)`;
-
-    if(calcLimit == -90){
-        currentPosition = -90;
-        test = 40;
-    }
-
-    slide.animate({
-        transform: `${position}`}, {
-            duration: 600, fill: "forwards"});
-
-    for(const image of images){
-        // image.style.objectPosition = `${nextPercentage + 90}% 50%`;
-        image.animate({
-            objectPosition: `${test}% 50%`}, {
-            duration: 600, fill: "forwards"});
-        }
-
-    line_scroll.animate({
-        width: `${3 + -calcLimit / 2.5}%`}, {
-        duration: 800, fill: "forwards"});
-
-})
-
-btnBack.addEventListener('click', () => {
-    currentPosition += 30;
-    test += 10;
-
-    calcLimit = Math.max(Math.min(currentPosition, 0), -90);
-    position = `translate(${calcLimit}%, 0%)`;
-
-    if(calcLimit == 0){
-        currentPosition = 0;
-        test = 90;
-    }
-
-    slide.animate({
-        transform: `${position}`}, {
-            duration: 600, fill: "forwards"});
-    
-    for(const image of images){
-        // image.style.objectPosition = `${nextPercentage + 90}% 50%`;
-        image.animate({
-            objectPosition: `${test}% 50%`}, {
-            duration: 600, fill: "forwards"});
-        }
-    
-    line_scroll.animate({
-        width: `${3 + -calcLimit / 2.5}%`}, {
-        duration: 800, fill: "forwards"});
-})
-
-
-// with dragging
-// ---------------------
-slide.onpointerdown = e =>{
-    slide.dataset.mouseDownAt = e.clientX;
-}
-
-slide.onpointermove = e => {
-    if(slide.dataset.mouseDownAt === "0") return;
-
-    const mouseDelta = parseFloat(slide.dataset.mouseDownAt) - e.clientX,
-        maxDelta  = window.innerWidth / 2;
-
-    const percentage = (mouseDelta / maxDelta) * -100,
-        nextPercentageUnconstrained = parseFloat(slide.dataset.prevPercentage) + percentage,
-        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -90);
-
-    slide.dataset.percentage = nextPercentage;
-    // slide.style.transform = `translate(${nextPercentage}%, 0%)`;
-    slide.animate({
-        transform: `translate(${nextPercentage}%, 0%)`}, {
-            duration: 600, fill: "forwards"});
-
-    for(const image of images){
-        // image.style.objectPosition = `${nextPercentage + 90}% 50%`;
-        image.animate({
-            objectPosition: `${nextPercentage + 90}% 50%`}, {
-            duration: 800, fill: "forwards"});
-    }
-
-    // line_scroll.style.width = `${5 + -nextPercentage / 2}%`;
-    line_scroll.animate({
-        width: `${3 + -nextPercentage / 2.5}%`}, {
-            duration: 800, fill: "forwards"});
-
-}
-
-slide.onpointerup = () =>{
-    slide.dataset.mouseDownAt = "0";
-    slide.dataset.prevPercentage = slide.dataset.percentage;
-}
-
 if(screen.width <= 1100){
     slide.style.overflow = "scroll";
 }
 else{
     slide.style.overflow = "none";
+    test();
 }
+
+
+// affichage bottom page, network and sound
+// ---------------------------------------------------------------
+let body = document.querySelector('body');
+let height = document.body.scrollHeight / 1.8;
+let page_bottom = document.querySelector('.home_page_bottom');
+
+window.addEventListener('scroll', () => {
+
+    if(window.scrollY > height){
+        page_bottom.style.opacity = 0;
+    }
+    else{
+        page_bottom.style.opacity = 100;
+    }
+})
