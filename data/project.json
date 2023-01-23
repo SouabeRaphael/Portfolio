@@ -1,0 +1,76 @@
+{
+    "project_first_home": [
+      {
+        "id": 1,
+        "title": "Identidé graphique",
+        "desc": "GRAPHISME",
+        "img": "carte_visite_2"
+      },
+      {
+        "id": 2,
+        "title": "Maquette Web",
+        "desc": "WEB DESIGN",
+        "img": "maquette_plantoburo"
+      },
+      {
+        "id": 3,
+        "title": "Self branding",
+        "desc": "GRAPHISME",
+        "img": "rendu_flyer_tri-volet"
+      },
+      {
+        "id": 4,
+        "title": "Trombinoscope",
+        "desc": "DESIGN & DEV",
+        "img": "mockup_trombi"
+      },
+      {
+        "id": 5,
+        "title": "E-commerce",
+        "desc": "WORDPRESS - DIVI",
+        "img": "Capture d’écran 2023-01-23 à 21.00.17"
+      },
+      {
+        "id": 6,
+        "title": "Animation",
+        "desc": "MOTION DESIGN",
+        "img": "after_effect"
+      },
+      {
+        "id": 7,
+        "title": "App Méteo",
+        "desc": "Developpement",
+        "img": "app_meteo"
+      }
+      
+    ],
+    "reviews": [
+      {
+        "id": 1,
+        "message": "LM drive has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-olled collaboration machine.",
+        "author": {
+          "name": "Sarah Patel",
+          "role": "Founder & CEO, Huddle",
+          "avatar": "profile-1.jpg"
+        }
+      },
+      {
+        "id": 2,
+        "message": "LM drive has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-olled collaboration machine.",
+        "author": {
+          "name": "Bruce McKenzie",
+          "role": "Founder & CEO, Huddle",
+          "avatar": "profile-2.jpg"
+        }
+      },
+      {
+        "id": 3,
+        "message": "LM drive has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-olled collaboration machine.",
+        "author": {
+          "name": "Iva Boyd",
+          "role": "Founder & CEO, Huddle",
+          "avatar": "profile-3.jpg"
+        }
+      }
+    ]
+  }

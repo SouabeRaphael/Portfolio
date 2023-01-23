@@ -158,8 +158,8 @@ body {
   font-size: 17px;
   margin: 0;
   margin-right: 20px;
-  color: black;
   letter-spacing: 2px;
+  color: black;
   transition: 0.8s cubic-bezier(0.5, 0.05, 0.1, 0.94);
 }
 .header_menu_burger_container_name p:nth-child(1) {
@@ -182,16 +182,12 @@ body {
   background-color: black;
   transition: 0.8s cubic-bezier(0.5, 0.05, 0.1, 0.94);
 }
-.header_menu_burger.open .header_menu_burger_container_name .header_menu_burger_name {
-  transform: translateY(-120%);
-}
 .header_menu_burger.open .header_menu_burger_name {
   color: white;
-  transition: 0.8s cubic-bezier(0.5, 0.05, 0.1, 0.94);
+  transform: translateY(-120%);
 }
 .header_menu_burger.open .header_menu_burger_dot {
   background-color: white;
-  transition: 0.8s cubic-bezier(0.5, 0.05, 0.1, 0.94);
 }
 .header a {
   text-decoration: none;
@@ -737,6 +733,8 @@ body {
 }
 .project_section_container_carrousel .carrousel .item_card {
   margin-left: 40px;
+  box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.376);
+  transition: transform 0.6s ease;
 }
 .project_section_container_carrousel .carrousel_item {
   position: relative;
@@ -744,7 +742,6 @@ body {
   left: 0px;
   width: 390px;
   height: 530px;
-  background-color: #761818;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -830,16 +827,16 @@ body {
 .project_section_container_carrousel .carrousel_item:hover::before {
   opacity: 40%;
 }
-.project_section_container_carrousel .carrousel_item:hover {
+.project_section_container_carrousel .carrousel .item_card:hover {
   transform: scale(0.98);
 }
-.project_section_container_carrousel .carrousel_item:hover .name {
+.project_section_container_carrousel .carrousel .item_card:hover .name {
   opacity: 1;
 }
-.project_section_container_carrousel .carrousel_item:hover .categories_project {
+.project_section_container_carrousel .carrousel .item_card:hover .categories_project {
   opacity: 1;
 }
-.project_section_container_carrousel .carrousel_item:hover .discover_project {
+.project_section_container_carrousel .carrousel .item_card:hover .discover_project {
   opacity: 1;
 }
 .project_section_container_carrousel .carrousel .item_card:nth-child(1) {

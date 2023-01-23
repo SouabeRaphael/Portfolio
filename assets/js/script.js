@@ -51,7 +51,7 @@ let logo_white = document.querySelector('.header_logo_white');
 menu_burger.addEventListener('click', openMenu);
 
 function openMenu(){
-    console.log('coucouy');
+    // console.log('coucouy');
     menu_full_screen.classList.toggle('open');
     menu_burger.classList.toggle('open');
     logo_black.classList.toggle('open');
@@ -290,3 +290,39 @@ window.addEventListener('scroll', () => {
 
 let t = document.querySelector('.header_logo');
 t.style.fill = "#E16753";
+
+// @@@
+// fonction fetch qui va chercher les valeur des projects dans un json
+// @@@
+
+fetch('data/project.json')
+    .then((reponse) => reponse.json())
+    .then((jsonProject) => {
+        jsonProject.project_first_home.map((project) => {
+            let id = project.id
+            let title = project.title;
+            let dec = project.desc;
+            let img = project.img;
+
+            let content_project = document.querySelector('.carrousel');
+
+            content_project.innerHTML += `
+            <div class="item_card" id="${id}">
+                <div class="carrousel_item" draggable="false">
+                    <img class="image_project" src="./assets/img/img_project/${img}.png">
+                    <div class="name">
+                        <p class="name_project">${title}</p>
+                        <div class="line_name"></div>
+                    </div>
+                    <span class="categories_project">${dec}</span>
+                    <a href="#">
+                        <div class="discover_project">
+                            <p class="link_discover">DECOUVRIR</p>
+                            <div class="line_link"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>`;
+
+        })
+    })
