@@ -1783,3 +1783,262 @@ body {
         }
     }
 }
+
+
+// @@@
+// project header
+// ---------------------------------------------------
+
+.header {
+    & .header_project{
+        filter: invert(1);
+    } 
+
+    & .header_menu_burger_project{
+        
+        & .header_menu_burger_name{
+            color: white;
+        }
+
+        & .header_menu_burger_dot{
+            background-color: white;
+        }
+    }
+}
+
+
+
+
+// @@@
+// project section hero
+// ---------------------------------------------------
+
+.project_hero_section{
+    
+    & .background_image{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        z-index: -2;
+
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    & .overlay_background{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        opacity: 35%;
+        z-index: -1;
+    }
+
+    & .title_project{
+
+        & .name{
+            color: white;
+            font-family: $font_format_djr;
+            font-size: $font_size_bigtitle;
+            font-weight: 100;
+            letter-spacing: 8px;
+        }
+
+        & .line_title{
+            height: 1px;
+            width: auto;
+            background-color: white;
+        }
+    }
+
+    & .project_page_bottom{
+        filter: invert(1);
+        z-index: 1;
+    }
+
+    & .home_page_scroll{
+        filter: invert(1);
+        z-index: 1;
+    }
+    
+
+}
+
+// @@@
+// project desct section
+// ---------------------------------------------------
+
+.desc_section{
+    position: relative;
+    width: 90%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+
+    & span{
+        font-family: $font_ofelia_text;
+        font-size: 1.2rem;
+        font-weight: 100;
+        letter-spacing: 2px;
+        color: black;
+    }
+
+    & p {
+        width: 50%;
+        font-family: $font_ofelia_text;
+        font-size: $font_size_subtitle;
+        font-weight: 100;
+        letter-spacing: 2px;
+        line-height: $line_height;
+        text-align: center;
+        margin: auto;
+        margin-top: 50px;
+    }
+}
+
+.info_project_section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    & .background_image{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .content_info{
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & .left{
+            width: 50%;
+            height: auto;
+
+            & h2{
+                font-family: $font_format_djr;
+                font-size: 2.5rem;
+                font-weight: 400;
+                letter-spacing: 5px;
+                margin-top: 100px;
+                margin-bottom: 15px;
+            }
+
+            & .subtitle{
+                font-family: $font_ofelia_text;
+                font-size: 1rem;
+                font-weight: 100;
+                letter-spacing: 2px;
+                color: black;
+            }
+
+            & .line{
+                height: 1px;
+                width: 100px;
+                margin: 20px 0;
+                background-color: $orange;
+            }
+
+            & .text{
+                
+                & p {
+                    font-family: $font_ofelia_text;
+                    font-size: $font_size_text;
+                    font-weight: 100;
+                    letter-spacing: 2px;
+                    line-height: $line_height;
+
+                    & span {
+                        color: $orange;
+                    }
+                }
+            }
+
+            & .title_tools{
+                font-family: $font_ofelia_text;
+                font-size: $font_size_text;
+                font-weight: 100;
+                letter-spacing: 2px;
+                line-height: $line_height;
+                color: $orange;
+            }
+
+            & .tools {
+
+                & span {
+                    font-family: $font_ofelia_text;
+                    font-size: $font_size_text;
+                    font-weight: 100;
+                    letter-spacing: 2px;
+                    line-height: $line_height;
+                    margin-right: 30px;
+                }
+            }
+        }
+
+        & .right{
+            width: 50%;
+            height: auto;
+        }
+    }
+
+    
+
+
+}
+
+.image_project_section{
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+
+    & .first_image{
+        width: 100%;
+        height: 80vh;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    & .seconde_image{
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+
+        & img:nth-child(1){
+            margin-right: 5px;
+        }
+
+        & img:nth-child(2){
+            margin-left: 5px;
+        }
+    }
+}
