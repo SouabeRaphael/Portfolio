@@ -1785,6 +1785,9 @@ body {
 }
 
 
+
+
+
 // @@@
 // project header
 // ---------------------------------------------------
@@ -1807,17 +1810,15 @@ body {
 }
 
 
-
-
 // @@@
-// project section hero
+// page project section hero
 // ---------------------------------------------------
 
 .project_hero_section{
     
     & .background_image{
         position: absolute;
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         z-index: -2;
 
@@ -1829,7 +1830,7 @@ body {
 
     & .overlay_background{
         position: absolute;
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         background-color: black;
         opacity: 35%;
@@ -1910,7 +1911,7 @@ body {
 
     & .background_image{
         position: absolute;
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         z-index: -1;
 
@@ -2039,6 +2040,45 @@ body {
 
         & img:nth-child(2){
             margin-left: 5px;
+        }
+    }
+
+    & .next_project{
+        width: 95%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        & h2{
+            font-family: $font_ofelia_text;
+            font-size: 28px;
+            font-weight: 100;
+            letter-spacing: 2px;
+            line-height: $line_height;
+            text-align: center;
+            margin-top: -35px;
+        }
+
+        & .container_button{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+
+            & figure{
+                width: 100%;
+                height: auto;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
         }
     }
 }
