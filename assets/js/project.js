@@ -3,8 +3,8 @@
 // var queue_url = urlcourante.substring(urlcourante.lastIndexOf( "=" ) + 1 );
 // alert (queue_url)
 
-let  header_logo_back = document.querySelector('.header_logo_back');
-let  header_logo_white = document.querySelector('.header_logo_white');
+let header_logo_back = document.querySelector('.header_logo_back');
+let header_logo_white = document.querySelector('.header_logo_white');
 let menu_name = document.querySelector('.header_menu_burger_name');
 let menu_burger_dot = document.querySelector('.header_menu_burger_dot');
 let network_and_sound = document.querySelector('.project_page_bottom');
@@ -31,3 +31,18 @@ function changeColor_scroll(){
         menu_burger_dot.style.backgroundColor = "white";
     }
 }
+
+// affichage bottom page, network and sound
+// ---------------------------------------------------------------
+
+// appel de variable dans le script.js
+
+window.addEventListener('scroll', () => {
+
+    if(window.scrollY > (document.body.scrollHeight / 1.3)){
+        network_and_sound.style.opacity = 0;
+    }
+    else{
+        network_and_sound.style.opacity = 1;
+    }
+})

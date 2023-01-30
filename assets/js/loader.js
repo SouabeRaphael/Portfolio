@@ -8,6 +8,7 @@ let circle = document.querySelector('.preloader svg path');
 let counter = 0;
 let c = 0;
 
+
 let i = setInterval(function () {
 
     percentage_loader.innerHTML = counter + '%';
@@ -19,10 +20,11 @@ let i = setInterval(function () {
         setTimeout(() => {
             preloader.style.transform = `translateY(-100%)`
         }, 300);
-
-        // setTimeout(() => {
-        //     preloader.style.visibility = "hidden";
-        // }, 1000);
     }
 
-}, 30);
+
+},20);
+
+// window.addEventListener('load', () => {
+//     preloader.style.transform = `translateY(-100%)`
+// })
