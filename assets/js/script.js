@@ -36,14 +36,7 @@ function openMenu(){
 // ---------------------
 
 let link_menu = document.querySelectorAll('.link_menu');
-console.log(link_menu);
-
-link_menu.forEach(function(item, index){
-    item.onclick = function () {
-        changeActivLink(index);
-        console.log('coucou');
-    }
-})
+// console.log(link_menu);
 
 function changeActivLink(index){
     let link_menu_active = document.querySelector('.link_menu_active');
@@ -51,6 +44,14 @@ function changeActivLink(index){
 
     link_menu[index].classList.add('link_menu_active');
 }
+
+link_menu.forEach(function(item, index){
+    item.onclick = function () {
+        changeActivLink(index);
+        openMenu();
+        // console.log('coucou');
+    }
+})
 
 
 

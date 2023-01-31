@@ -9,21 +9,21 @@ let counter = 0;
 let c = 0;
 
 
-let i = setInterval(function () {
+// let i = setInterval(function () {
 
-    percentage_loader.innerHTML = counter + '%';
-    circle.style.strokeDasharray = `${counter} 100`;
-    counter++;
+//     percentage_loader.innerHTML = counter + '%';
+//     circle.style.strokeDasharray = `${counter} 100`;
+//     counter++;
 
-    if(counter == 101){
-        clearInterval(i);
-        setTimeout(() => {
-            preloader.style.transform = `translateY(-100%)`
-        }, 300);
-    }
+//     if(counter == 101){
+//         clearInterval(i);
+//         setTimeout(() => {
+//             preloader.style.transform = `translateY(-100%)`
+//         }, 300);
+//     }
 
 
-},20);
+// },20);
 
 // window.addEventListener('load', () => {
 //     preloader.style.transform = `translateY(-100%)`
