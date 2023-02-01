@@ -3,11 +3,12 @@
 // cursor script
 // ----------------------------------------------------
 
-const cursor = document.querySelector('.cursor');
+let cursor = document.querySelector('.cursor');
 
 document.addEventListener('mousemove', e => {
     cursor.setAttribute('style', 'top:'+(e.pageY - 20)+"px; left:"+(e.pageX - 20)+"px;")
 })
+
 
 // menu full screen
 // ----------------------------------------------------
@@ -260,8 +261,9 @@ window.addEventListener('scroll', () => {
 })
 
 
-let t = document.querySelector('.header_logo');
-t.style.fill = "#E16753";
+// let t = document.querySelector('.header_logo');
+// t.style.fill = "#E16753";
+
 
 // @@@
 // fonction fetch qui va chercher les valeur des projects dans un json
@@ -298,3 +300,5 @@ fetch('data/project.json')
 
         })
     })
+
+

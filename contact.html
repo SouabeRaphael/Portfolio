@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./assets/css/output.css">
     <!-- appel dossier JavaScript -->
     <script async src="./assets/js/script.js"></script>
-    <script async src="./assets/js/loader.js"></script>
+    <script async src="./assets/js/qrcode.js"></script>
 </head>
 <body>
     <div class="bg_noise"></div>
@@ -104,7 +104,7 @@
                     </div>
                 </div>
                 <div class="right">
-                    <form action="mailto:rafa.souabe@gmail.com?subject=Fomulaire Mon javascript" method="" class="form_contact">
+                    <!-- <form action="mailto:rafa.souabe@gmail.com?subject=Fomulaire Mon javascript" method="" class="form_contact">
                         <div class="container_item_form">
                             <label for="firstname" class="label_form">Prénom</label>
                             <input type="text" name="firstname" class="item_form" placeholder="Prénom" required pattern="[A-Za-z]{1,32}">
@@ -118,7 +118,25 @@
                             <textarea name="message" class="item_form item_form_textarea" placeholder="Message" required pattern="[A-Za-z]{1,32}"></textarea>
                         </div>
                         <button type="submit" class="btn_submit">Envoyer</button>
-                    </form>
+                    </form> -->
+                    
+                    
+                    <div class="container_qrcode">
+                        <div class="content_title">
+                            <h2>Scanner ici</h2>
+                            <p>Carte de visite virtuelle</p>
+                            <img src="./assets/img/arrow_down.svg" class="arrow_down">
+                        </div>
+                        <div class="area_qrcode">
+                            <a href="https://souaberaphael.github.io/Carte_De_visite/">
+                                <figure>
+                                    <img src="./assets/img/qrCode/qr-code.png" class="qrcode">
+                                </figure>
+                            </a>
+                        </div>
+                        <a href="https://souaberaphael.github.io/Carte_De_visite/"><button class="btn_card_visite">Carte de visite virtuelle</button></a>
+                    </div>
+                    
                 </div>
             </div>
         </section>
