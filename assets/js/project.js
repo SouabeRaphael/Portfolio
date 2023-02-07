@@ -135,4 +135,21 @@ window.addEventListener("scroll", function() {
 
     }, 10);
   });
+
+
+// next project 
+// -----------------------------------------
+let btn_next = document.querySelector('.container_button');
+
+btn_next.addEventListener('click', () => {
+    let next_id = paramValue + 1;
+    if(next_id <= 7){
+        window.location.replace(`https://souaberaphael.github.io/Portfolio/project.html?id=${next_id}`);
+    }
+    else{
+        next_id = 1;
+        window.location.replace(`https://souaberaphael.github.io/Portfolio/project.html?id=${next_id}`);
+    }
+    
+})
   
