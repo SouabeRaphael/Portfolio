@@ -4,31 +4,31 @@
         "id": 1,
         "title": "Identidé visuel",
         "desc": "GRAPHISME",
-        "img": "carte_visite_2"
+        "img": "virtual/carte_visite_virtual_2.jpg"
       },
       {
         "id": 2,
         "title": "Maquette Web",
         "desc": "WEB DESIGN",
-        "img": "maquette_plantoburo"
+        "img": "plantoburo/maquette_plantoburo.jpg"
       },
       {
         "id": 3,
         "title": "Self branding",
         "desc": "GRAPHISME",
-        "img": "rendu_flyer_tri-volet"
+        "img": "self_branding/self_branding_1.jpg"
       },
       {
         "id": 4,
         "title": "Trombinoscope",
         "desc": "DESIGN & DEV",
-        "img": "mockup_trombi"
+        "img": "trombinoscope/trombinoscope_1.jpg"
       },
       {
         "id": 5,
         "title": "E-commerce",
         "desc": "WORDPRESS - DIVI",
-        "img": "Capture d’écran 2023-01-23 à 21.00.17"
+        "img": "e-commerce/e-commerce_1.jpg"
       },
       {
         "id": 6,
@@ -44,33 +44,118 @@
       }
       
     ],
-    "reviews": [
+    "page_project": [
       {
         "id": 1,
-        "message": "LM drive has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-olled collaboration machine.",
-        "author": {
-          "name": "Sarah Patel",
-          "role": "Founder & CEO, Huddle",
-          "avatar": "profile-1.jpg"
-        }
+        "img_bg_hero": "virtual/carte_visite_virtual_2.jpg",
+        "title": "Itentité visuel",
+        "spe": "GRAPHISME / DESIGN",
+        "desc": "Réalisation d'une identiter visuelle d'une start up spécialiter dans le criptomonaie, en partant d'une page vierge",
+        "details": {
+          "name": "Identité visuel",
+          "realisation": "PROJECT SCOLAIRE",
+          "brief": "Actuellement étudiant à l’école La Manu Le Havre, en première année de bachelor en tant que developper/designer web. Je suis naturellement attiré par les métiers du numérique et du multimédia. ",
+          "concept": "Actuellement étudiant à l’école La Manu Le Havre, en première année de bachelor en tant que developper/designer web. Je suis naturellement attiré par les métiers du numérique et du multimédia. ",
+          "tools" : ["Adobes XD", "PHP"],
+          "bg_img": "virtual/virtual_mockup_ombre.jpg"
+        },
+        "galeries": ["virtual/carte_visite_entete_virtual.jpg", "virtual/affiche_abribus_virtual.jpg", "virtual/flyer_virtual.jpg"]
       },
       {
         "id": 2,
-        "message": "LM drive has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-olled collaboration machine.",
-        "author": {
-          "name": "Bruce McKenzie",
-          "role": "Founder & CEO, Huddle",
-          "avatar": "profile-2.jpg"
-        }
+        "img_bg_hero": "plantoburo/plantoburo_2.jpg",
+        "title": "Itentité visuel",
+        "spe": "DEVELOPPEMENT",
+        "desc": "Refonte du site de DJ Hamma, figure incontournable des clubs et bars de nuit, devenu en 2018 Champion de France des DJs au concours RedBull, et finaliste au championnat du monde à Taïwan en 2019.",
+        "details": {
+          "name": "Identité visuel",
+          "realisation": "PROJECT SCOLAIRE",
+          "brief": "Actuellement étudiant à l’école La Manu Le Havre, en première année de bachelor en tant que developper/designer web. Je suis naturellement attiré par les métiers du numérique et du multimédia. ",
+          "concept": "Actuellement étudiant à l’école La Manu Le Havre, en première année de bachelor en tant que developper/designer web. Je suis naturellement attiré par les métiers du numérique et du multimédia. ",
+          "tools" : ["Adobes XD", "PHP", "test"],
+          "bg_img": "plantoburo/mockup_plantoburo.jpg"
+        },
+        "galeries": ["plantoburo/plantoburo_3.jpg", "plantoburo/plantoburo_5.jpg", "plantoburo/plantoburo_1.jpg"]
       },
       {
         "id": 3,
-        "message": "LM drive has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-olled collaboration machine.",
-        "author": {
-          "name": "Iva Boyd",
-          "role": "Founder & CEO, Huddle",
-          "avatar": "profile-3.jpg"
-        }
+        "img_bg_hero": "self_branding/self_branding_2.jpg",
+        "title": "Self branding",
+        "spe": "GRAPHISME / DESIGN",
+        "desc": "Refonte du site de DJ Hamma, figure incontournable des clubs et bars de nuit, devenu en 2018 Champion de France des DJs au concours RedBull, et finaliste au championnat du monde à Taïwan en 2019.",
+        "details": {
+          "name": "Identité visuel",
+          "realisation": "PROJECT SCOLAIRE",
+          "brief": "Actuellement étudiant à l’école La Manu Le Havre, en première année de bachelor en tant que developper/designer web. Je suis naturellement attiré par les métiers du numérique et du multimédia. ",
+          "concept": "Actuellement étudiant à l’école La Manu Le Havre, en première année de bachelor en tant que developper/designer web. Je suis naturellement attiré par les métiers du numérique et du multimédia. ",
+          "tools" : ["Adobes XD", "PHP"],
+          "bg_img": "self_branding/mockup_ombre.jpg"
+        },
+        "galeries": ["self_branding/self_branding_3.jpg", "self_branding/self_branding_4.jpg", "self_branding/self_branding_5.jpg"]
+      },
+      {
+        "id": 4,
+        "img_bg_hero": "trombinoscope/trombinoscope_1.jpg",
+        "title": "Trombinoscope",
+        "spe": "DESIGN / DEV",
+        "desc": "Refonte du site de DJ Hamma, figure incontournable des clubs et bars de nuit, devenu en 2018 Champion de France des DJs au concours RedBull, et finaliste au championnat du monde à Taïwan en 2019.",
+        "details": {
+          "name": "Trombinoscope",
+          "realisation": "PROJECT SCOLAIRE",
+          "brief": "Actuellement étudiant à l’école La Manu Le Havre, en première année de bachelor en tant que developper/designer web. Je suis naturellement attiré par les métiers du numérique et du multimédia. ",
+          "concept": "Actuellement étudiant à l’école La Manu Le Havre, en première année de bachelor en tant que developper/designer web. Je suis naturellement attiré par les métiers du numérique et du multimédia. ",
+          "tools" : ["Adobes XD", "PHP"],
+          "bg_img": "trombinoscope/trombinoscope_2.jpg"
+        },
+        "galeries": ["trombinoscope/trombinoscope_3.jpg", "trombinoscope/trombinoscope_4.jpg", "trombinoscope/trombinoscope_5.jpg"]
+      },
+      {
+        "id": 5,
+        "img_bg_hero": "e-commerce/e-commerce_1.jpg",
+        "title": "E-commerce",
+        "spe": "Developpement",
+        "desc": "Refonte du site de DJ Hamma, figure incontournable des clubs et bars de nuit, devenu en 2018 Champion de France des DJs au concours RedBull, et finaliste au championnat du monde à Taïwan en 2019.",
+        "details": {
+          "name": "Identité visuel",
+          "realisation": "PROJECT SCOLAIRE",
+          "brief": "Actuellement étudiant à l’école La Manu Le Havre, en première année de bachelor en tant que developper/designer web. Je suis naturellement attiré par les métiers du numérique et du multimédia. ",
+          "concept": "Actuellement étudiant à l’école La Manu Le Havre, en première année de bachelor en tant que developper/designer web. Je suis naturellement attiré par les métiers du numérique et du multimédia. ",
+          "tools" : ["Adobes XD", "PHP"],
+          "bg_img": "after_effect"
+        },
+        "galeries": ["e-commerce/e-commerce_3.jpg", "after_effect", "after_effect"]
+      },
+      {
+        "id": 6,
+        "img_bg_hero": "app_meteo.png",
+        "title": "Itentité visuel",
+        "spe": "Developpement",
+        "desc": "Refonte du site de DJ Hamma, figure incontournable des clubs et bars de nuit, devenu en 2018 Champion de France des DJs au concours RedBull, et finaliste au championnat du monde à Taïwan en 2019.",
+        "details": {
+          "name": "Identité visuel",
+          "realisation": "PROJECT SCOLAIRE",
+          "brief": "Actuellement étudiant à l’école La Manu Le Havre, en première année de bachelor en tant que developper/designer web. Je suis naturellement attiré par les métiers du numérique et du multimédia. ",
+          "concept": "Actuellement étudiant à l’école La Manu Le Havre, en première année de bachelor en tant que developper/designer web. Je suis naturellement attiré par les métiers du numérique et du multimédia. ",
+          "tools" : ["Adobes XD", "PHP"],
+          "bg_img": "after_effect"
+        },
+        "galeries": ["after_effect", "after_effect", "after_effect"]
+      },
+      {
+        "id": 7,
+        "img_bg_hero": "app_meteo.png",
+        "title": "Itentité visuel",
+        "spe": "Developpement",
+        "desc": "Refonte du site de DJ Hamma, figure incontournable des clubs et bars de nuit, devenu en 2018 Champion de France des DJs au concours RedBull, et finaliste au championnat du monde à Taïwan en 2019.",
+        "details": {
+          "name": "Identité visuel",
+          "realisation": "PROJECT SCOLAIRE",
+          "brief": "Actuellement étudiant à l’école La Manu Le Havre, en première année de bachelor en tant que developper/designer web. Je suis naturellement attiré par les métiers du numérique et du multimédia. ",
+          "concept": "Actuellement étudiant à l’école La Manu Le Havre, en première année de bachelor en tant que developper/designer web. Je suis naturellement attiré par les métiers du numérique et du multimédia. ",
+          "tools" : ["Adobes XD", "PHP"],
+          "bg_img": "after_effect"
+        },
+        "galeries": ["after_effect", "after_effect", "after_effect"]
       }
     ]
   }

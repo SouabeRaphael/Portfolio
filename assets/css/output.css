@@ -399,7 +399,7 @@ body {
   align-items: center;
   bottom: 30px;
   opacity: 100%;
-  transition: opacity 0.3s cubic-bezier(0.5, 0.05, 0.1, 0.94);
+  transition: all 0.3s cubic-bezier(0.5, 0.05, 0.1, 0.94);
 }
 .home_section .home_page_bottom .container_network {
   width: 100%;
@@ -840,7 +840,7 @@ body {
   z-index: 1;
 }
 .project_section_container_carrousel .carrousel_item:hover::before {
-  opacity: 40%;
+  opacity: 50%;
 }
 .project_section_container_carrousel .carrousel .item_card:hover {
   transform: scale(0.98);
@@ -1620,6 +1620,11 @@ body {
   height: auto;
 }
 
+@media (max-width: 1600px) {
+  .info_project_section .background_image img {
+    object-fit: cover;
+  }
+}
 @media (max-width: 1000px) {
   .desc_section p {
     width: 70%;
@@ -1760,7 +1765,7 @@ body {
 }
 .contact_section .container_content {
   display: flex;
-  width: 70%;
+  width: 80%;
   height: auto;
   justify-content: space-between;
   align-items: center;
@@ -1828,6 +1833,7 @@ body {
   animation-iteration-count: infinite;
 }
 .contact_section .container_content .right .container_qrcode .area_qrcode {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1845,6 +1851,10 @@ body {
   width: 200px;
   height: 200px;
   padding: 10px;
+  visibility: hidden;
+}
+.contact_section .container_content .right .container_qrcode .area_qrcode .qrcode.actif {
+  visibility: visible;
 }
 .contact_section .container_content .right .container_qrcode .btn_card_visite {
   border: 1.5px solid black;

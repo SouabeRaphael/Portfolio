@@ -61,6 +61,7 @@ link_menu.forEach(function(item, index){
 // network
 // ----------------------------------------------------
 
+
 let trait = document.querySelector('.trait');
 let trait_span = document.querySelector('.trait span');
 let network = document.querySelector('.network');
@@ -283,7 +284,7 @@ fetch('data/project.json')
             content_project.innerHTML += `
             <div class="item_card" id="${id}">
                 <div class="carrousel_item" draggable="false">
-                    <img class="image_project" src="./assets/img/img_project/${img}.png">
+                    <img class="image_project" src="./assets/img/img_project/${img}">
                     <div class="name">
                         <p class="name_project">${title}</p>
                         <div class="line_name"></div>

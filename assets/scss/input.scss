@@ -474,7 +474,7 @@ body {
         align-items: center;
         bottom: 30px;
         opacity: 100%;
-        transition: opacity 0.3s cubic-bezier(0.50, 0.05, 0.1, 0.94);
+        transition: all 0.3s cubic-bezier(0.50, 0.05, 0.1, 0.94);
 
         & .container_network{
             width: 100%;
@@ -985,7 +985,9 @@ body {
             }
 
             &_item:hover::before{
-                opacity: 40%;
+                opacity: 50%;
+                // backdrop-filter: blur(10px);
+                // backdrop-filter: brightness(100%);
             }
             & .item_card:hover{
                 transform: scale(0.98);
@@ -2137,6 +2139,20 @@ body {
 // media query page project
 // ---------------------------------------------------
 
+@media (max-width: 1600px) {
+
+    .info_project_section{
+
+        & .background_image{
+            
+            & img {
+                object-fit: cover;
+            }
+        }
+    }
+    
+}
+
 @media (max-width: 1000px) {
     
     .desc_section{
@@ -2396,7 +2412,7 @@ body {
 
     & .container_content{
         display: flex;
-        width: 70%;
+        width: 80%;
         height: auto;
         justify-content: space-between;
         align-items: center;
@@ -2530,6 +2546,7 @@ body {
                 }
 
                 & .area_qrcode{
+                    position: relative;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -2549,6 +2566,10 @@ body {
                         height: 200px;
                         // background-color: #0F0F0E;
                         padding: 10px;
+                        visibility: hidden;
+                    }
+                    & .qrcode.actif{
+                        visibility: visible;
                     }
                 }
 
