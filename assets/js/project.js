@@ -14,6 +14,8 @@ fetch('data/project.json')
     .then((jsonProject) => {
         jsonProject.page_project.map((project) => {
 
+            let tools = project.details.tools;
+
             let bg_img_hero = document.querySelector('.background_image');
             let title_hero = document.querySelector('.title_project');
             let desc_section = document.querySelector('.desc_section');
@@ -56,7 +58,7 @@ fetch('data/project.json')
                             <div class="line"></div>
                             <p class="title_tools">Logiciel:</p>
                             <div class="tools">
-                                <span>${project.details.tools}</span>
+                                <span>${tools.join(' - ')}</span>
                             </div>
                         </div>      
                     <div class="right"></div>
