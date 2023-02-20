@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 ::before,
 ::after {
@@ -334,9 +335,18 @@ body {
 .home_section_left h1 {
   font-family: forma-djr-banner, sans-serif;
   font-size: 4rem;
-  line-height: 100%;
+  line-height: 120%;
   font-weight: 400;
   letter-spacing: 8px;
+  display: flex;
+}
+.home_section_left h2 {
+  font-family: forma-djr-banner, sans-serif;
+  font-size: 4rem;
+  line-height: 120%;
+  font-weight: 400;
+  letter-spacing: 8px;
+  display: none;
 }
 .home_section_left p {
   font-family: ofelia-text, sans-serif;
@@ -350,6 +360,7 @@ body {
   color: black;
 }
 .home_section_left button {
+  position: relative;
   color: black;
   border: 1.5px solid black;
   font-size: 1.2rem;
@@ -359,6 +370,30 @@ body {
   letter-spacing: 2px;
   margin-top: 30px;
   font-weight: 300;
+  transition: all 0.3s ease-in;
+}
+.home_section_left button:hover {
+  color: white;
+  background-color: black;
+}
+.home_section_left button::before {
+  content: "Contactez-moi";
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.home_section_left button::after {
+  content: "J’ai déjà hâte";
+  display: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.home_section_left button:hover::before {
+  opacity: 0;
+  display: none;
+}
+.home_section_left button:hover::after {
+  display: inline-block;
+  opacity: 1;
 }
 .home_section_rigth {
   position: absolute;
@@ -578,6 +613,30 @@ body {
   letter-spacing: 2px;
   margin-top: 30px;
   font-weight: 300;
+  transition: all 0.3s ease-in;
+}
+.about_section_left button:hover {
+  color: white;
+  background-color: black;
+}
+.about_section_left button::before {
+  content: "Télécharger CV";
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.about_section_left button::after {
+  content: "Oublie pas de cliquer";
+  display: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.about_section_left button:hover::before {
+  opacity: 0;
+  display: none;
+}
+.about_section_left button:hover::after {
+  display: inline-block;
+  opacity: 1;
 }
 .about_section_rigth {
   width: 50%;
@@ -1113,6 +1172,11 @@ body {
   }
   .home_section .home_section_left h1 {
     font-size: 2.5rem;
+    display: none;
+  }
+  .home_section .home_section_left h2 {
+    font-size: 2.5rem;
+    display: flex;
   }
   .home_section .home_section_left p {
     font-size: 1.1rem;
@@ -1131,6 +1195,7 @@ body {
   }
   .skills_section h2 {
     font-size: 2.5rem;
+    display: none;
   }
   .project_section h2 {
     font-size: 2.5;
@@ -1276,7 +1341,7 @@ body {
   .home_section .home_section_left {
     transform: translateY(80px);
   }
-  .home_section .home_section_left h1 {
+  .home_section .home_section_left h2 {
     font-size: 2rem;
   }
   .home_section .home_section_left p {

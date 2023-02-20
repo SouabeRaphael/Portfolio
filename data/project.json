@@ -2,7 +2,7 @@
     "project_first_home": [
       {
         "id": 1,
-        "title": "Identidé visuel",
+        "title": "Identité visuelle",
         "desc": "GRAPHISME",
         "img": "virtual/carte_visite_virtual_2.jpg"
       },
@@ -50,12 +50,12 @@
         "img_bg_hero": "virtual/carte_visite_virtual_2.jpg",
         "title": "Itentité visuel",
         "spe": "GRAPHISME / DESIGN",
-        "desc": "Ce projet consiste en la création d'une identité visuelle pour une jeune start-up nommée Virtual, spécialisée dans la gestion de patrimoine en crypto-monnaies. Son objectif est de simplifier et d'avoir une gestion financière intelligente et autonome.",
+        "desc": "Ce projet vise à créer une identité visuelle pour Virtual, une jeune start-up spécialisée dans la gestion de patrimoine en crypto-monnaies. Son but est de simplifier et d'améliorer la gestion financière, en la rendant plus intelligente et autonome.",
         "details": {
-          "name": "Identité visuel",
+          "name": "Identité visuelle",
           "realisation": "PROJECT SCOLAIRE",
-          "brief": "Dans ce projet, j'ai dû créer de zéro l'identité visuelle d'une start-up, comprenant un logo, une typographie et des couleurs, ainsi que des supports de communication tels qu'une carte de visite, un flyer abribus, un flyer et un en-tête de document.",
-          "concept": "Création d'une identité visuelle personnelle pour une start-up spécialisée dans les crypto-monnaies. Cela a pour but d'améliorer notre capacité à concevoir une charte graphique complète.",
+          "brief": "Avec ce projet, j'ai eu la chance de créer de A à Z l'identité visuelle d'une start-up, qui comprend un logo, une typographie et des couleurs, ainsi que divers supports de communication comme des cartes de visite, des flyers abribus, des flyers et des en-têtes de document.",
+          "concept": " J'étais très enthousiaste de créer une identité visuelle personnalisée pour une start-up spécialisée dans les crypto-monnaies, qui nous a permis d'avoir une charte graphique complète.",
           "tools" : ["Adobes Illustrator", "Adobes Indesign", "Adobes photoshop"],
           "bg_img": "virtual/virtual_mockup_ombre.jpg"
         },
@@ -66,12 +66,12 @@
         "img_bg_hero": "plantoburo/plantoburo_2.jpg",
         "title": "Maquette Web",
         "spe": "WEB DESIGN",
-        "desc": "Ce projet consiste à réaliser une maquette pour un site web e-commerce pour une jeune entreprise appelée Plantoburo, qui est dirigée par deux paysagistes d'intérieur et souhaite un nouveau site web.",
+        "desc": "Nous étions enthousiastes à l'idée de réaliser une maquette pour le nouveau site web d'e-commerce de Plantoburo, une jeune entreprise dirigée par deux paysagistes d'intérieur dynamiques. Nous étions impatients de voir ce que cela donnerait et de nous lancer dans ce projet passionnant !",
         "details": {
           "name": "Maquette Web",
           "realisation": "PROJECT SCOLAIRE",
-          "brief": "Création d'une maquette pour un site web e-commerce de vente de plantes d'intérieur pour entreprises et particuliers, en respectant les critères d'harmonisation Feng shui des plantes proposées.",
-          "concept": "Proposer aux entreprises et aux particuliers des aménagements paysagers d'intérieur pour transformer les espaces de travail en espaces Feng Shui où il fait bon travailler. Cela a pour but de nous améliorer dans la conception d'un site web e-commerce avec certains critères imposés.",
+          "brief": "Nous étions ravis de travailler sur la création d'une maquette pour un site web e-commerce de vente de plantes d'intérieur pour entreprises et particuliers. Nous nous étions engagés à respecter les critères d'harmonisation Feng shui des plantes proposées.",
+          "concept": "L'objectif était de proposer aux entreprises et aux particuliers des aménagements paysagers d'intérieur pour transformer leurs espaces de travail en lieux Feng Shui où le travail devient agréable. Nous voulions améliorer notre conception d'un site web e-commerce avec certains critères imposés.",
           "tools" : ["Adobes XD", "Behances"],
           "bg_img": "plantoburo/mockup_plantoburo.jpg"
         },
@@ -82,12 +82,12 @@
         "img_bg_hero": "self_branding/self_branding_2.jpg",
         "title": "Self branding",
         "spe": "GRAPHISME / DESIGN",
-        "desc": "Avoir une identité visuelle unique, c'est donner une image cohérente et professionnelle de soi, que ce soit dans les médias sociaux, les communications professionnelles ou dans la vie en général.",
+        "desc": "Avoir une identité visuelle distincte, c'est offrir une image cohérente et professionnelle de soi-même, que ce soit sur les réseaux sociaux, les communications professionnelles ou dans la vie courante.",
         "details": {
           "name": "Self Branding",
           "realisation": "PROJECT PERSONNELLE",
-          "brief": "Création d'une charte graphique complète, comprenant le logo, la typographie et les couleurs, ainsi que des supports de communication tels que des cartes de visite et des flyers, entre autres.",
-          "concept": "Créer sa propre identité visuelle, c'est s'affirmer et se démarquer en transmettant sa personnalité et ses valeurs à travers les choix de couleurs, de typographies et d'images.",
+          "brief": "J'ai pu créer une charte graphique complète, comprenant un logo, une typographie et des couleurs à mon image, ainsi que des supports de communication tels que des cartes de visite et des flyers pour m’aider à faire passer mon message !",
+          "concept": "Créer sa propre identité visuelle, c'est s'affirmer avec assurance et se démarquer en transmettant avec conviction sa personnalité et ses valeurs à travers des choix judicieux de couleurs, de typographies et d'images.",
           "tools" : ["Adobes XD", "Adobes Illustrator", "Adobes Indesign", "Adobes photoshop"],
           "bg_img": "self_branding/mockup_ombre.jpg"
         },
@@ -98,12 +98,12 @@
         "img_bg_hero": "trombinoscope/trombinoscope_1.jpg",
         "title": "Trombinoscope",
         "spe": "DESIGN / DEV",
-        "desc": "Le projet consiste à concevoir et développer une application de trombinoscope pour notre classe scolaire. Cette application permettra aux étudiants et aux enseignants de stocker les informations personnelles des membres de la classe.",
+        "desc": "Nous sommes en train de concevoir et de développer une application de trombinoscope géniale pour notre classe scolaire. Cette application va nous permettre de partager et d'enregistrer facilement les informations personnelles des membres de la classe.",
         "details": {
           "name": "Trombinoscope",
           "realisation": "PROJECT SCOLAIRE",
-          "brief": "Création d'une application de trombinoscope, permettant aux étudiants et enseignants de stocker les informations personnelles des membres de la classe. Une maquette a été créée pour avoir un aperçu avant de la développer ultérieurement en utilisant PHP / SQL.",
-          "concept": "Ce projet consiste à créer une application de trombinoscope pour les étudiants et les enseignants d'une classe scolaire. Cette application permettra à la communauté scolaire de stocker et de consulter les informations de contact de chaque membre de la classe en un seul endroit.",
+          "brief": "Nous avons créé une application de trombinoscope qui aide les étudiants et les enseignants à stocker facilement les informations personnelles des membres de la classe. Nous avons commencé par créer une maquette qui nous donnait une idée de ce que serait le produit final, une fois développé en utilisant PHP/SQL.",
+          "concept": "Ce projet consiste à créer une application de trombinoscope pour les étudiants et les enseignants d'une classe scolaire. Avec cette application, la communauté scolaire pourra facilement stocker et consulter les informations de contact de chaque membre de la classe dans un seul endroit. Nous espérons que cette application sera utile pour les communautés scolaires et nous nous réjouissons de voir tous les avantages qu'elle peut offrir !",
           "tools" : ["Adobes XD", "PHP", "SQL"],
           "bg_img": "trombinoscope/trombinoscope_2.jpg"
         },
@@ -118,8 +118,8 @@
         "details": {
           "name": "E-commerce",
           "realisation": "PROJECT SCOLAIRE",
-          "brief": "Création d'un modèle de boutique en ligne avec Wordpress, WooCommerce et le thème DIVI. Le choix des produits à vendre et le nombre de produits a été libre.",
-          "concept": "Ce projet avait pour but de concevoir un site e-commerce sur WordPress, à l'aide du thème builder DIVI ainsi que WooCommerce. Ce projet avait pour objectif de nous faire travailler ces deux outils.",
+          "brief": "Création d'un modèle de boutique en ligne avec Wordpress, WooCommerce et le thème DIVI. Le choix des produits à vendre et le nombre de produits était libre.",
+          "concept": "Ce projet visait à concevoir un site e-commerce sur WordPress, en utilisant le thème builder DIVI et WooCommerce. Son objectif était de nous familiariser avec ces deux outils et de nous permettre de travailler de manière plus approfondie.",
           "tools" : ["Wordpress", "DIVI", "WooCommerce"],
           "bg_img": "e-commerce/e-commerce_4.jpg"
         },
@@ -135,7 +135,7 @@
           "name": "Animation",
           "realisation": "PROJECT SCOLAIRE",
           "brief": "Création d'une vidéo Gif pour une entreprise, sur After Effects en motion design.",
-          "concept": "Ce projet consiste à créer une vidéo Gif en motion design sur After Effects, pour but de nous faire travailler cet outil très puissant. Ce projet m'a permis de mettre en pratique mes compétences en animation et de développer de nouvelles techniques.",
+          "concept": "Ce projet visait à créer une vidéo Gif en motion design sur After Effects avec un ton amical. Il m'a permis de mettre en pratique mes compétences en animation et de développer de nouvelles techniques.",
           "tools" : ["Adobes After Effect", "Adobes Illustrator"],
           "bg_img": "motion_design/motion_design_1.jpg"
         },
@@ -146,12 +146,12 @@
         "img_bg_hero": "mx_mothern/mx_mothern_3.jpg",
         "title": "MX-Mothern",
         "spe": "WEB DESIGN",
-        "desc": "Réalisation d'une charte graphique, une maquette web ainsi que son développement sur WordPress d'un site de moto pour l'entreprise Coo2boost.",
+        "desc": "Réalisation d’une charte graphique, d’une maquette et du développement un site de moto sur WordPress pour l'entreprise Coo2boost.",
         "details": {
           "name": "MX-Mothern",
           "realisation": "PROJECT STAGE",
-          "brief": "Création de l'identité visuelle et le site web de MX-Mothern, une entreprise spécialisée dans les articles de motos. Cela impliquait la réalisation d'une charte graphique, d'une maquette web, et le développement du site MX-Mothern sur la plateforme WordPress.",
-          "concept": "Le but de ce projet était de concevoir l'identité visuelle de MX-Mothern, ainsi que de construire le site web depuis les bases. Cela m'a donné l'occasion d'accroître ma créativité et d'explorer plus en détail WordPress.",
+          "brief": "Création de l'identité visuelle et du site web de MX-Mothern, une entreprise spécialisée dans les articles de motos. Cela impliquait la réalisation d'une charte graphique, d'une maquette web, et le développement du site MX-Mothern sur la plateforme WordPress.",
+          "concept": "Le but de ce projet était de concevoir l'identité visuelle de MX-Mothern, ainsi que de construire le site web depuis les bases. Cela m'a donné l'occasion d'accroître ma créativité et d'explorer d’avantage WordPress.",
           "tools" : ["Adobes Illustrator", "Adobes XD", "Wordpress", "Elementor Pro"],
           "bg_img": "mx_mothern/mx_mothern_5.jpg"
         },

@@ -400,9 +400,18 @@ body {
         & h1{
             font-family: $font_format_djr;
             font-size: $font_size_bigtitle;
-            line-height: 100%;
+            line-height: 120%;
             font-weight: 400;
             letter-spacing: 8px;
+            display: flex;
+        }
+        & h2{
+            font-family: $font_format_djr;
+            font-size: $font_size_bigtitle;
+            line-height: 120%;
+            font-weight: 400;
+            letter-spacing: 8px;
+            display: none;
         }
 
         & p{
@@ -419,6 +428,7 @@ body {
         }
 
         & button{
+            position: relative;
             color: black;
             border: 1.5px solid black;
             font-size: 1.2rem;
@@ -428,6 +438,33 @@ body {
             letter-spacing: 2px;
             margin-top: 30px;
             font-weight: 300;
+            transition: all 0.3s ease-in;
+        }
+        & button:hover{
+            color: white;
+            background-color: black;
+        }
+        button::before {
+            content: "Contactez-moi";
+            opacity: 1;
+            transition: all 0.3s ease;
+          }
+          
+        button::after {
+            content: "J’ai déjà hâte";
+            display: none;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+          
+        button:hover::before {
+            opacity: 0;
+            display: none;
+        }
+          
+        button:hover::after {
+            display: inline-block;
+            opacity: 1;
         }
     }
 
@@ -682,6 +719,33 @@ body {
             letter-spacing: 2px;
             margin-top: 30px;
             font-weight: 300;
+            transition: all 0.3s ease-in;
+        }
+        & button:hover{
+            color: white;
+            background-color: black;
+        }
+        button::before {
+            content: "Télécharger CV";
+            opacity: 1;
+            transition: all 0.3s ease;
+          }
+          
+        button::after {
+            content: "Oublie pas de cliquer";
+            display: none;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+          
+        button:hover::before {
+            opacity: 0;
+            display: none;
+        }
+          
+        button:hover::after {
+            display: inline-block;
+            opacity: 1;
         }
     }
 
@@ -1406,6 +1470,11 @@ body {
     
             & h1{
                 font-size: 2.5rem;
+                display: none;
+            }
+            & h2{
+                font-size: 2.5rem;
+                display: flex;
             }
     
             & p{
@@ -1434,6 +1503,7 @@ body {
 
         & h2{
             font-size: 2.5rem;
+            display: none;
         }
     }
 
@@ -1668,7 +1738,7 @@ body {
     
         & .home_section_left{
             transform: translateY(80px);
-            & h1{
+            & h2{
                 font-size: 2rem;
             }
     
