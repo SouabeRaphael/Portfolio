@@ -330,7 +330,7 @@ body {
 .home_section_left {
   width: 100%;
   height: auto;
-  transform: translateY(25px);
+  transform: translateY(50px);
 }
 .home_section_left h1 {
   font-family: forma-djr-banner, sans-serif;
