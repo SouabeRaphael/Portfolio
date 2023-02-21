@@ -674,6 +674,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: auto;
+    margin-bottom: 0px;
 
     &_left{
         width: 50%;
@@ -795,6 +796,7 @@ body {
     justify-content: center;
     flex-direction: column;
     margin: auto;
+    margin-top: 0px;
 
     & h2{
         font-family: $font_format_djr;
@@ -1134,6 +1136,12 @@ body {
     }
 }
 
+
+
+// @@@
+// responsive 
+// ---------------------------------------------------
+
 @media (max-width: 1800px){
     .project_section{
     
@@ -1193,6 +1201,10 @@ body {
                 &_item{
                     width: 240px;
                     height: 380px;
+
+                    & .name_project{
+                        font-size: 1.8rem;
+                    }
                 
                 }
     
@@ -1215,8 +1227,6 @@ body {
             padding-right: 50px;
     
             & figure{
-                width: auto;
-                height: 100%;
 
                 & img{
                     width: auto;
@@ -1232,6 +1242,7 @@ body {
     }
 
     .skills_section{
+
         &_left, &_rigth{
     
             & .skills_item{
@@ -1252,6 +1263,21 @@ body {
             }
         }
     
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .about_section{
+        &_left{
+            & h2{
+                font-size: 40px;
+            }
+
+            & span {
+                font-size: 15px;
+            }
+        }
     }
 }
 
@@ -1284,6 +1310,7 @@ body {
     }
 
     .skills_section{
+        
         margin-top: 150px;
     
         &_container{
@@ -1296,11 +1323,11 @@ body {
         width: 100%;
         height: auto;
         left: 10%;
-        padding-right: 10%;
+        padding-right: 15%;
+        margin-top: 20%;
 
         & h2{
             font-size: $font_size_title;
-            margin-top: 20%;
         }
     
         & .line_scroll{
@@ -1418,12 +1445,24 @@ body {
             padding-right: 0;
         }
     }
+
+    .skills_section{
+        transform: translateY(250px);
+    }
+
+    .project_section{
+        margin-top: 50%;
+    }
 }
 @media (max-width: 900px) {
     .home_section{
         & .home_page_scroll{
             display: none;
         }
+    }
+
+    .project_section{
+        margin-top: 60%;
     }
 }
 @media (max-width: 800px) {
@@ -1499,19 +1538,19 @@ body {
     }
 
     .skills_section{
-        transform: translateY(200px);
+
+        margin-top: 200px;
 
         & h2{
             font-size: 2.5rem;
-            display: none;
         }
     }
 
     .project_section{
+        margin-top: 65%;
 
         & h2{
             font-size: 2.5;
-            margin-top: 60%;
         }
     
         & .line_scroll{
@@ -1587,10 +1626,10 @@ body {
     }
 
     .project_section{
+        margin-top: 80%;
 
         & h2{
             font-size: 2.2rem;
-            margin-top: 70%;
         }
     }
 }
@@ -1615,6 +1654,7 @@ body {
     }
 
     .skills_section{
+
         &_left, &_rigth{
     
             & .skills_item{
@@ -1809,6 +1849,7 @@ body {
     }
 
     .skills_section{
+        margin-bottom: 50px;
 
         & h2{
             font-size: 2rem;
@@ -1816,10 +1857,10 @@ body {
     }
 
     .project_section{
+        margin-top: 100%;
 
         & h2{
             font-size: 2rem;
-            margin-top: 90%;
         }
     
         & .arrow_carrousel{
@@ -1837,7 +1878,7 @@ body {
     }
 
     .skills_section{
-        transform: translateY(300px);
+        margin-bottom: 100px;
         
         & h2{
            font-size: 1.4rem; 
@@ -1867,9 +1908,7 @@ body {
         }
     }
     .project_section{
-        & h2{
-            margin-top: 120%;
-        }
+        margin-top: 130%;
     }
 }
 @media (max-width: 400px) {
@@ -1890,9 +1929,7 @@ body {
     }
 
     .project_section{
-        & h2{
-            margin-top: 150%;
-        }
+        margin-top: 170%;
     }
 }
 
