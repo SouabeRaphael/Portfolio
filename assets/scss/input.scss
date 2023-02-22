@@ -216,6 +216,7 @@ body {
             margin-right: 20px;
             right: 0;
             bottom: -120%;
+            color: white;
         }
 
         &_dot{
@@ -229,7 +230,6 @@ body {
     &_menu_burger.open{
         
         & .header_menu_burger_name {
-            color: white;
             transform: translateY(-120%);
         }
 
@@ -669,31 +669,29 @@ body {
 
 .about_section{
     width: 90%;
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
-    margin-bottom: 0px;
+    margin-top: 10%;
 
     &_left{
         width: 50%;
         height: auto;
-        transform: translateY(60px);
 
         & h2{
             font-family: $font_format_djr;
             font-size: $font_size_title;
             font-weight: 400;
             letter-spacing: 8px;
-            margin-bottom: 25px;
         }
 
         & span{
             font-family: $font_ofelia_text;
             font-size: $font_size_text;
             font-weight: 100;
-            margin-top: 50px;
+            margin-top: 75px;
             letter-spacing: 2px;
         }
         & p{
@@ -756,7 +754,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        transform: translateY(60px);
+        margin-top: 60px;
 
         & figure{
             position: relative;
@@ -790,13 +788,13 @@ body {
 
 .skills_section{
     width: 90%;
-    height: 100vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin: auto;
-    margin-top: 0px;
+    margin-top: 10%;
 
     & h2{
         font-family: $font_format_djr;
@@ -886,6 +884,7 @@ body {
     justify-content: center;
     flex-direction: column;
     margin: auto;
+    margin-top: 5%;
 
     & h2{
         width: 100%;
@@ -1242,6 +1241,7 @@ body {
     }
 
     .skills_section{
+        margin-top: 15%;
 
         &_left, &_rigth{
     
@@ -1310,8 +1310,6 @@ body {
     }
 
     .skills_section{
-        
-        margin-top: 150px;
     
         &_container{
             flex-direction: column;
@@ -1324,7 +1322,6 @@ body {
         height: auto;
         left: 10%;
         padding-right: 15%;
-        margin-top: 20%;
 
         & h2{
             font-size: $font_size_title;
@@ -1445,24 +1442,12 @@ body {
             padding-right: 0;
         }
     }
-
-    .skills_section{
-        transform: translateY(250px);
-    }
-
-    .project_section{
-        margin-top: 50%;
-    }
 }
 @media (max-width: 900px) {
     .home_section{
         & .home_page_scroll{
             display: none;
         }
-    }
-
-    .project_section{
-        margin-top: 60%;
     }
 }
 @media (max-width: 800px) {
@@ -1539,15 +1524,12 @@ body {
 
     .skills_section{
 
-        margin-top: 200px;
-
         & h2{
             font-size: 2.5rem;
         }
     }
 
     .project_section{
-        margin-top: 65%;
 
         & h2{
             font-size: 2.5;
@@ -1626,7 +1608,6 @@ body {
     }
 
     .project_section{
-        margin-top: 80%;
 
         & h2{
             font-size: 2.2rem;
@@ -1713,7 +1694,7 @@ body {
                 height: 55px;
             }
     
-            & .header_logo_blaxk.open{
+            & .header_logo_black.open{
                 position: absolute;
                 opacity: 0;
             }
@@ -1804,15 +1785,14 @@ body {
 
     .about_section{
         flex-direction: column;
+        height: auto;
         &_left{
             width: 85%;
             height: auto;
-            transform: translateY(60px);
             margin-bottom: 50px;
     
             & h2{
                 font-size: 1.8rem;
-                margin-bottom: 25px;
             }
     
             & span{
@@ -1830,6 +1810,7 @@ body {
         }
         &_rigth{
             width: 85%;
+            height: auto;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1850,6 +1831,7 @@ body {
 
     .skills_section{
         margin-bottom: 50px;
+        height: auto;
 
         & h2{
             font-size: 2rem;
@@ -1857,7 +1839,6 @@ body {
     }
 
     .project_section{
-        margin-top: 100%;
 
         & h2{
             font-size: 2rem;
@@ -1873,12 +1854,8 @@ body {
     }
 }
 @media (max-width: 480px) {
-    .about_section{
-        margin-top: 100px;
-    }
 
     .skills_section{
-        margin-bottom: 100px;
         
         & h2{
            font-size: 1.4rem; 
@@ -1907,9 +1884,6 @@ body {
             }
         }
     }
-    .project_section{
-        margin-top: 130%;
-    }
 }
 @media (max-width: 400px) {
     .home_section{
@@ -1927,11 +1901,8 @@ body {
         }
 
     }
-
-    .project_section{
-        margin-top: 170%;
-    }
 }
+
 
 
 
@@ -1943,7 +1914,12 @@ body {
 
 .header {
     & .header_project{
-        filter: invert(1);
+        & .header_logo_black{
+            opacity: 0;
+        }
+        & .header_logo_white{
+            opacity: 1;
+        }
     } 
 
     & .header_menu_burger_project{
@@ -1955,6 +1931,10 @@ body {
         & .header_menu_burger_dot{
             background-color: white;
         }
+    }
+
+    .header_menu_burger_dot.open{
+        background-color: white !important;
     }
 }
 
@@ -2029,13 +2009,14 @@ body {
 .desc_section{
     position: relative;
     width: 90%;
-    height: 70vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin: auto;
     text-align: center;
+    padding: 70px 0;
 
     & span{
         font-family: $font_ofelia_text;
@@ -2059,6 +2040,7 @@ body {
 }
 
 .info_project_section{
+    position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -2068,7 +2050,7 @@ body {
     & .background_image{
         position: absolute;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         z-index: 1;
 
         & img{
@@ -2260,6 +2242,16 @@ body {
     
 }
 
+@media (max-width: 1300px) {
+    .info_project_section{
+        height: auto;
+
+        .content_info{
+            margin-bottom: 70px;
+        }
+    }
+}
+
 @media (max-width: 1000px) {
     
     .desc_section{
@@ -2419,16 +2411,19 @@ body {
 
 @media (max-width: 500px) {
 
-    .header{
-
-        &_figure_logo{
-            
-            & .header_logo_white_project{
-                filter: invert(1);
-            }
-            
+    .header_content_header.open{
+    
+        & .header_logo_black{
+            opacity: 0;
+        }
+        & .header_logo_white{
+            opacity: 1 !important;
         }
     
+    }
+
+    .header_menu_burger_dot.open{
+        background-color: white !important;
     }
     
     .project_hero_section{

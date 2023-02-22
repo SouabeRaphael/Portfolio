@@ -185,6 +185,7 @@ body {
   margin-right: 20px;
   right: 0;
   bottom: -120%;
+  color: white;
 }
 .header_menu_burger_dot {
   width: 20px;
@@ -194,7 +195,6 @@ body {
   transition: 0.8s cubic-bezier(0.5, 0.05, 0.1, 0.94);
 }
 .header_menu_burger.open .header_menu_burger_name {
-  color: white;
   transform: translateY(-120%);
 }
 .header_menu_burger.open .header_menu_burger_dot {
@@ -566,30 +566,28 @@ body {
 }
 .about_section {
   width: 90%;
-  height: 100vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
-  margin-bottom: 0px;
+  margin-top: 10%;
 }
 .about_section_left {
   width: 50%;
   height: auto;
-  transform: translateY(60px);
 }
 .about_section_left h2 {
   font-family: forma-djr-banner, sans-serif;
   font-size: 3rem;
   font-weight: 400;
   letter-spacing: 8px;
-  margin-bottom: 25px;
 }
 .about_section_left span {
   font-family: ofelia-text, sans-serif;
   font-size: 1.2rem;
   font-weight: 100;
-  margin-top: 50px;
+  margin-top: 75px;
   letter-spacing: 2px;
 }
 .about_section_left p {
@@ -645,7 +643,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(60px);
+  margin-top: 60px;
 }
 .about_section_rigth figure {
   position: relative;
@@ -671,13 +669,13 @@ body {
 
 .skills_section {
   width: 90%;
-  height: 100vh;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin: auto;
-  margin-top: 0px;
+  margin-top: 10%;
 }
 .skills_section h2 {
   font-family: forma-djr-banner, sans-serif;
@@ -753,6 +751,7 @@ body {
   justify-content: center;
   flex-direction: column;
   margin: auto;
+  margin-top: 5%;
 }
 .project_section h2 {
   width: 100%;
@@ -1014,6 +1013,9 @@ body {
     width: 380px;
     height: 400px;
   }
+  .skills_section {
+    margin-top: 15%;
+  }
   .skills_section_left .skills_item, .skills_section_rigth .skills_item {
     width: 90%;
   }
@@ -1051,9 +1053,6 @@ body {
     font-size: 1rem;
     padding: 10px 20px;
   }
-  .skills_section {
-    margin-top: 150px;
-  }
   .skills_section_container {
     flex-direction: column;
   }
@@ -1062,7 +1061,6 @@ body {
     height: auto;
     left: 10%;
     padding-right: 15%;
-    margin-top: 20%;
   }
   .project_section h2 {
     font-size: 3rem;
@@ -1153,19 +1151,10 @@ body {
     width: auto;
     padding-right: 0;
   }
-  .skills_section {
-    transform: translateY(250px);
-  }
-  .project_section {
-    margin-top: 50%;
-  }
 }
 @media (max-width: 900px) {
   .home_section .home_page_scroll {
     display: none;
-  }
-  .project_section {
-    margin-top: 60%;
   }
 }
 @media (max-width: 800px) {
@@ -1208,14 +1197,8 @@ body {
   .about_section_left p {
     font-size: 1rem;
   }
-  .skills_section {
-    margin-top: 200px;
-  }
   .skills_section h2 {
     font-size: 2.5rem;
-  }
-  .project_section {
-    margin-top: 65%;
   }
   .project_section h2 {
     font-size: 2.5;
@@ -1265,9 +1248,6 @@ body {
   .skills_section h2 {
     font-size: 2.2rem;
   }
-  .project_section {
-    margin-top: 80%;
-  }
   .project_section h2 {
     font-size: 2.2rem;
   }
@@ -1316,7 +1296,7 @@ body {
     width: 55px;
     height: 55px;
   }
-  .header_figure_logo .header_logo_blaxk.open {
+  .header_figure_logo .header_logo_black.open {
     position: absolute;
     opacity: 0;
   }
@@ -1381,16 +1361,15 @@ body {
   }
   .about_section {
     flex-direction: column;
+    height: auto;
   }
   .about_section_left {
     width: 85%;
     height: auto;
-    transform: translateY(60px);
     margin-bottom: 50px;
   }
   .about_section_left h2 {
     font-size: 1.8rem;
-    margin-bottom: 25px;
   }
   .about_section_left span {
     font-size: 0.95rem;
@@ -1405,6 +1384,7 @@ body {
   }
   .about_section_rigth {
     width: 85%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1419,12 +1399,10 @@ body {
   }
   .skills_section {
     margin-bottom: 50px;
+    height: auto;
   }
   .skills_section h2 {
     font-size: 2rem;
-  }
-  .project_section {
-    margin-top: 100%;
   }
   .project_section h2 {
     font-size: 2rem;
@@ -1437,12 +1415,6 @@ body {
   }
 }
 @media (max-width: 480px) {
-  .about_section {
-    margin-top: 100px;
-  }
-  .skills_section {
-    margin-bottom: 100px;
-  }
   .skills_section h2 {
     font-size: 1.4rem;
   }
@@ -1458,9 +1430,6 @@ body {
     width: 60%;
     font-size: 1rem;
   }
-  .project_section {
-    margin-top: 130%;
-  }
 }
 @media (max-width: 400px) {
   .home_section {
@@ -1472,18 +1441,21 @@ body {
   .home_section .home_section_left p {
     font-size: 1rem;
   }
-  .project_section {
-    margin-top: 170%;
-  }
 }
-.header .header_project {
-  filter: invert(1);
+.header .header_project .header_logo_black {
+  opacity: 0;
+}
+.header .header_project .header_logo_white {
+  opacity: 1;
 }
 .header .header_menu_burger_project .header_menu_burger_name {
   color: white;
 }
 .header .header_menu_burger_project .header_menu_burger_dot {
   background-color: white;
+}
+.header .header_menu_burger_dot.open {
+  background-color: white !important;
 }
 
 .menu_full_screen {
@@ -1534,13 +1506,14 @@ body {
 .desc_section {
   position: relative;
   width: 90%;
-  height: 70vh;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin: auto;
   text-align: center;
+  padding: 70px 0;
 }
 .desc_section span {
   font-family: ofelia-text, sans-serif;
@@ -1562,6 +1535,7 @@ body {
 }
 
 .info_project_section {
+  position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -1571,7 +1545,7 @@ body {
 .info_project_section .background_image {
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: 1;
 }
 .info_project_section .background_image img {
@@ -1716,6 +1690,14 @@ body {
     object-fit: cover;
   }
 }
+@media (max-width: 1300px) {
+  .info_project_section {
+    height: auto;
+  }
+  .info_project_section .content_info {
+    margin-bottom: 70px;
+  }
+}
 @media (max-width: 1000px) {
   .desc_section p {
     width: 70%;
@@ -1803,8 +1785,14 @@ body {
   }
 }
 @media (max-width: 500px) {
-  .header_figure_logo .header_logo_white_project {
-    filter: invert(1);
+  .header_content_header.open .header_logo_black {
+    opacity: 0;
+  }
+  .header_content_header.open .header_logo_white {
+    opacity: 1 !important;
+  }
+  .header_menu_burger_dot.open {
+    background-color: white !important;
   }
   .project_hero_section .title_project .name {
     font-size: 2rem;

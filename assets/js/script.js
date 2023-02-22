@@ -17,7 +17,7 @@ let menu_burger = document.querySelector('.header_menu_burger');
 let menu_burger_name = document.querySelector('.header_menu_burger .header_menu_burger_name');
 let menu_burger_name_close = document.querySelector('.header_menu_burger .header_menu_burger_name_close');
 let menu_full_screen = document.querySelector('.menu_full_screen');
-let logo_black = document.querySelector('.header_logo_back');
+let logo_black = document.querySelector('.header_logo_black');
 let logo_white = document.querySelector('.header_logo_white');
 
 menu_burger.addEventListener('click', openMenu);

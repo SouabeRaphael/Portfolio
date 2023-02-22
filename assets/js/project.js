@@ -98,10 +98,11 @@ fetch('data/project.json')
 window.addEventListener("scroll", function() {
     
     let network_and_sound = document.querySelector('.project_page_bottom');
-    let header_logo_back = document.querySelector('.header_logo_back');
+    let header_logo_back = document.querySelector('.header_logo_black');
     let header_logo_white = document.querySelector('.header_logo_white');
     let menu_name = document.querySelector('.header_menu_burger_name');
     let menu_burger_dot = document.querySelector('.header_menu_burger_dot');
+
     if(window.scrollY >= 200){
         network_and_sound.style.filter = "invert(0)";  
     }
@@ -109,17 +110,17 @@ window.addEventListener("scroll", function() {
         network_and_sound.style.filter = "invert(1)";  
     }
     if(window.scrollY >= 900){
-        header_logo_white.style.opacity = "1";
-        header_logo_back.style.opacity = "0";
+        header_logo_white.style.opacity = "0";
+        header_logo_back.style.opacity = "1";
         menu_name.style.color = "black";
         menu_burger_dot.style.backgroundColor = "black";
     }
     if(window.scrollY < 900){
-        header_logo_white.style.opacity = "0";
-        header_logo_back.style.opacity = "1";
+        header_logo_white.style.opacity = "1";
+        header_logo_back.style.opacity = "0";
         menu_name.style.color = "white";
         menu_burger_dot.style.backgroundColor = "white";
-    }
+    }    
 
 
     // affichage bottom page, network and sound
@@ -140,24 +141,34 @@ window.addEventListener("scroll", function() {
 // next project 
 // -----------------------------------------
 
-    window.addEventListener("load", (event) => {
-        let btn_next = document.querySelector('.container_button');
-        console.log(btn_next);
+window.addEventListener("load", (event) => {
+    let btn_next = document.querySelector('.container_button');
+    console.log(btn_next);
 
-        btn_next.addEventListener('click', () => {
-            let next_id = parseInt(paramValue) + 1;
-            console.log(next_id);
-            if(next_id <= 7){
-                window.location.replace(`https://souaberaphael.github.io/Portfolio/project.html?id=${next_id}`);
-            }
-            else{
-                next_id = 1;
-                window.location.replace(`https://souaberaphael.github.io/Portfolio/project.html?id=${next_id}`);
-            }
-        })
-    });
+    btn_next.addEventListener('click', () => {
+        let next_id = parseInt(paramValue) + 1;
+        console.log(next_id);
+        if(next_id <= 7){
+            window.location.replace(`https://souaberaphael.github.io/Portfolio/project.html?id=${next_id}`);
+        }
+        else{
+            next_id = 1;
+            window.location.replace(`https://souaberaphael.github.io/Portfolio/project.html?id=${next_id}`);
+        }
+    })
+});
 
     
+
+let header = this.document.querySelector('.header_content_header');
+let burger = document.querySelector('.header_menu_burger');
+let dot = document.querySelector('.header_menu_burger_dot');
+
+burger.addEventListener('click', () => {
+    header.classList.toggle('open');
+    dot.classList.toggle('open');
+})
+
 
 
 
