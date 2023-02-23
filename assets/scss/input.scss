@@ -688,10 +688,11 @@ body {
 
         & span{
             font-family: $font_ofelia_text;
-            font-size: $font_size_text;
+            font-size: 1rem;
             font-weight: 100;
             margin-top: 75px;
             letter-spacing: 2px;
+            line-height: 40px;
         }
         & p{
             font-family: $font_ofelia_text;
@@ -730,7 +731,7 @@ body {
           }
           
         button::after {
-            content: "Oublie pas de cliquer";
+            content: "Alors, qu'en pensez-vous ?";
             display: none;
             opacity: 0;
             transition: all 0.3s ease;
@@ -1274,7 +1275,7 @@ body {
             }
 
             & span {
-                font-size: 15px;
+                font-size: 0.8rem;
             }
         }
     }
@@ -1508,10 +1509,7 @@ body {
 
     .about_section{
         &_left{
-            & h2{
-                font-size: 2.2rem;
-            }
-    
+
             & span{
                 font-size: 1rem;
             }
@@ -1595,6 +1593,21 @@ body {
     
     }
 
+    .about_section{
+        &_left{
+
+            & h2{
+                font-size: 2.2rem;
+            }
+            
+            & span{
+                font-size: 0.8rem;
+                line-height: 10px;
+            }
+        }
+    }
+
+
     .skills_section{
 
         &_container{
@@ -1630,6 +1643,20 @@ body {
                 }
             }
             
+        }
+    }
+
+    .about_section{
+        &_left{
+
+            & h2{
+                font-size: 1.9rem;
+            }
+            
+            & span{
+                font-size: 0.8rem;
+                line-height: 0px;
+            }
         }
     }
 
@@ -1791,11 +1818,11 @@ body {
             margin-bottom: 50px;
     
             & h2{
-                font-size: 1.8rem;
+                font-size: 1.6rem;
             }
     
             & span{
-                font-size: 0.95rem;
+                font-size: 0.8rem;
                 font-weight: 100;
             }
             & p{
@@ -1989,13 +2016,11 @@ body {
 
     & .project_page_bottom{
         filter: invert(1);
-        z-index: 2;
         opacity: 1;
     }
 
     & .home_page_scroll{
         filter: invert(1);
-        z-index: 2;
     }
     
 
@@ -2016,6 +2041,7 @@ body {
     margin: auto;
     text-align: center;
     padding: 70px 0;
+    z-index: -1;
 
     & span{
         font-family: $font_ofelia_text;
@@ -2045,6 +2071,7 @@ body {
     display: flex;
     align-items: center;
     background-color: #E6E3DB;
+    z-index: -1;
 
     & .background_image{
         position: absolute;
