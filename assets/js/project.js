@@ -77,7 +77,7 @@ fetch('data/project.json')
                             <figure>
                                 <img src="./assets/img/arrow_next.svg">
                             </figure>
-                            <h2>Project suivant</h2>
+                            <h2>Projet suivant</h2>
                         </div>    
                     </div>
                 `;

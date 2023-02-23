@@ -91,6 +91,7 @@ body {
   z-index: 99;
   pointer-events: none;
   transition: width 0.8s, height 0.8s, background-color 0.8s;
+  transform: translate(0%, 0%);
 }
 
 .cursor::before {
@@ -110,7 +111,7 @@ body {
   width: 280px;
   height: 280px;
   background-color: black;
-  transform: translate(-50%, -50%);
+  transform: translate(-40%, -40%);
 }
 
 .header {
@@ -1930,10 +1931,10 @@ body {
   width: 200px;
   height: 200px;
   padding: 10px;
-  visibility: hidden;
+  opacity: 0;
 }
-.contact_section .container_content .right .container_qrcode .area_qrcode .qrcode.actif {
-  visibility: visible;
+.contact_section .container_content .right .container_qrcode .area_qrcode:hover .qrcode {
+  opacity: 1;
 }
 .contact_section .container_content .right .container_qrcode .btn_card_visite {
   border: 1.5px solid black;

@@ -106,7 +106,7 @@ body {
     z-index: 99;
     pointer-events: none;
     transition: width 0.8s, height 0.8s, background-color 0.8s;
-    // transform: translate(-50%,-50%);
+    transform: translate(0%, 0%);
 }
 
 .cursor::before {
@@ -126,9 +126,8 @@ body {
     width: 280px;
     height: 280px;
     background-color: black;
-    transform: translate(-50%,-50%);
+    transform: translate(-40%,-40%);
 }
-
 
 // @@@
 // header
@@ -2668,12 +2667,13 @@ body {
                         height: 200px;
                         // background-color: #0F0F0E;
                         padding: 10px;
-                        visibility: hidden;
-                    }
-                    & .qrcode.actif{
-                        visibility: visible;
+                        opacity: 0;
                     }
                 }
+                .area_qrcode:hover .qrcode{
+                    opacity: 1;
+                }
+
 
                 & .btn_card_visite{
                     border: 1.5px solid black;
