@@ -307,10 +307,20 @@ body {
 
         & img{
             width: 350px;
-            height: 400px;
+            height: auto;
             position: absolute;
             bottom: 0;
             right: 0;
+        }
+
+        & .contour{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 350px;
+            height: 630px;
+            border: 2px solid white;
+            transform: translate(-30px, -30px);
         }
     }
 
@@ -764,6 +774,7 @@ body {
             & img{
                 width: auto;
                 height: 590px;
+                transform: translateY(20px);
             }
 
             & div {
@@ -1230,6 +1241,7 @@ body {
                 & img{
                     width: auto;
                     height: 450px;
+                    transform: translateY(0px);
                 }
     
                 & div {

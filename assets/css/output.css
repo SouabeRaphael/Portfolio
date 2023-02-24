@@ -259,10 +259,19 @@ body {
 }
 .menu_full_screen .img_item_nav img {
   width: 350px;
-  height: 400px;
+  height: auto;
   position: absolute;
   bottom: 0;
   right: 0;
+}
+.menu_full_screen .img_item_nav .contour {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 350px;
+  height: 630px;
+  border: 2px solid white;
+  transform: translate(-30px, -30px);
 }
 .menu_full_screen .contact_menu {
   position: absolute;
@@ -655,6 +664,7 @@ body {
 .about_section_rigth figure img {
   width: auto;
   height: 590px;
+  transform: translateY(20px);
 }
 .about_section_rigth figure div {
   position: absolute;
@@ -1010,6 +1020,7 @@ body {
   .about_section_rigth figure img {
     width: auto;
     height: 450px;
+    transform: translateY(0px);
   }
   .about_section_rigth figure div {
     width: 380px;
