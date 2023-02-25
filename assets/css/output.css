@@ -220,11 +220,13 @@ body {
   transition: transform 0.8s cubic-bezier(0.5, 0.05, 0.1, 0.94);
 }
 .menu_full_screen .nav_menu {
-  width: 50%;
+  width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  padding-left: 50px;
+  z-index: 2;
 }
 .menu_full_screen .nav_menu .item {
   display: flex;
@@ -254,22 +256,29 @@ body {
   opacity: 100%;
 }
 .menu_full_screen .img_item_nav {
+  position: absolute;
+  right: 0;
+  bottom: 0;
   width: 50%;
   height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 .menu_full_screen .img_item_nav img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
   width: 350px;
   height: auto;
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 .menu_full_screen .img_item_nav .contour {
   position: absolute;
-  bottom: 0;
   right: 0;
+  bottom: 0;
   width: 350px;
-  height: 631px;
+  height: 630px;
   border: 2px solid white;
   transform: translate(-30px, -30px);
 }
@@ -1008,6 +1017,14 @@ body {
   }
 }
 @media (max-width: 1300px) {
+  .menu_full_screen .img_item_nav img {
+    width: 300px;
+    height: auto;
+  }
+  .menu_full_screen .img_item_nav .contour {
+    width: 300px;
+    height: 540px;
+  }
   .about_section_left {
     width: 50%;
     height: auto;
@@ -1042,6 +1059,14 @@ body {
   }
 }
 @media (max-width: 1200px) {
+  .menu_full_screen .img_item_nav img {
+    width: 250px;
+    height: auto;
+  }
+  .menu_full_screen .img_item_nav .contour {
+    width: 250px;
+    height: 450px;
+  }
   .about_section_left h2 {
     font-size: 40px;
   }
@@ -1122,19 +1147,12 @@ body {
     width: 80%;
     transform: translateX(120%);
   }
-  .menu_full_screen .nav_menu {
-    width: 80%;
-  }
   .menu_full_screen .nav_menu .item a {
     font-size: 2.8rem;
     line-height: 120px;
   }
   .menu_full_screen .nav_menu .item a span {
     font-size: 1rem;
-  }
-  .menu_full_screen .img_item_nav img {
-    width: 250px;
-    height: 300px;
   }
   .about_section {
     flex-direction: column;
@@ -1185,10 +1203,6 @@ body {
   .menu_full_screen .nav_menu .item a span {
     font-size: 1rem;
     margin-right: 20px;
-  }
-  .menu_full_screen .img_item_nav img {
-    width: 200px;
-    height: 250px;
   }
   .home_section .home_section_left h1 {
     font-size: 2.5rem;
@@ -1242,8 +1256,11 @@ body {
   .menu_full_screen {
     justify-content: flex-start;
   }
-  .menu_full_screen .nav_menu .item {
-    margin-left: 60px;
+  .menu_full_screen .nav_menu .item a {
+    font-size: 3rem;
+  }
+  .menu_full_screen .nav_menu .item a span {
+    font-size: 1.2rem;
   }
   .menu_full_screen .img_item_nav {
     display: none;
@@ -1271,8 +1288,8 @@ body {
 }
 @media (max-width: 600px) {
   .menu_full_screen .nav_menu .item a {
-    font-size: 2rem;
-    line-height: 120px;
+    font-size: 2.5rem;
+    line-height: 100px;
   }
   .menu_full_screen .nav_menu .item a span {
     font-size: 1rem;
@@ -1339,15 +1356,18 @@ body {
     width: 100%;
     transform: translateX(150%);
   }
+  .menu_full_screen .nav_menu {
+    padding-left: 20px;
+  }
   .menu_full_screen .nav_menu .item {
     margin-left: 0;
   }
   .menu_full_screen .nav_menu .item a {
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 100px;
   }
   .menu_full_screen .nav_menu .item a span {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-left: 30px;
   }
   .menu_full_screen .nav_menu .item .link_menu.link_menu_active {
@@ -1439,6 +1459,13 @@ body {
   }
 }
 @media (max-width: 480px) {
+  .menu_full_screen .nav_menu .item a {
+    font-size: 1.8rem;
+    line-height: 120px;
+  }
+  .menu_full_screen .nav_menu .item a span {
+    font-size: 0.8rem;
+  }
   .skills_section h2 {
     font-size: 1.4rem;
   }
@@ -1464,6 +1491,28 @@ body {
   }
   .home_section .home_section_left p {
     font-size: 1rem;
+  }
+}
+@media (max-height: 700px) {
+  .menu_full_screen .nav_menu {
+    padding-right: 0px;
+  }
+  .menu_full_screen .nav_menu .item a {
+    line-height: 80px;
+  }
+  .menu_full_screen .nav_menu .item .link_menu {
+    color: white;
+    opacity: 50%;
+  }
+  .menu_full_screen .nav_menu .item .link_menu.link_menu_active {
+    transform: translateX(50px);
+    opacity: 100%;
+  }
+  .menu_full_screen .contact_menu {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    display: none;
   }
 }
 .header .header_project .header_logo_black {
