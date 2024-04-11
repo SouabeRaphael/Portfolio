@@ -60,6 +60,8 @@ fetch('data/project.json')
                             <div class="tools">
                                 <span>${tools.join(' - ')}</span>
                             </div>
+                            <br>
+                            <a href="${project.details.link_project}" class="link_project" target="_blank">Lien du projet</a>
                         </div>      
                     <div class="right"></div>
                 `;

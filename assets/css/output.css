@@ -663,7 +663,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 0px;
 }
 .about_section_rigth figure {
   position: relative;
@@ -672,18 +672,18 @@ body {
 }
 .about_section_rigth figure img {
   width: auto;
-  height: 590px;
-  transform: translateY(20px);
+  height: 650px;
+  transform: translate(20px, -10px);
 }
 .about_section_rigth figure div {
   position: absolute;
   width: 500px;
-  height: 550px;
+  height: 500px;
   background-color: #2D4450;
   opacity: 22%;
   filter: blur(10px);
   top: 55%;
-  left: 50%;
+  left: 60%;
   transform: translate(-50%, -50%);
   z-index: -2;
 }
@@ -1613,7 +1613,6 @@ body {
   display: flex;
   align-items: center;
   background-color: #E6E3DB;
-  z-index: -1;
 }
 .info_project_section .background_image {
   position: absolute;
@@ -1685,6 +1684,14 @@ body {
   letter-spacing: 2px;
   line-height: 1.5;
   margin-right: 30px;
+}
+.info_project_section .content_info .left .link_project {
+  font-family: ofelia-text, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  color: #E16753;
 }
 .info_project_section .content_info .right {
   width: 50%;

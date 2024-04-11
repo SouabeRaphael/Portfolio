@@ -20,27 +20,45 @@
       },
       {
         "id": 4,
+        "title": "Creaspark",
+        "desc": "DESIGN & DEV",
+        "img": "creaspark/creaspark_1.png"
+      },
+      {
+        "id": 5,
         "title": "Trombinoscope",
         "desc": "DESIGN & DEV",
         "img": "trombinoscope/trombinoscope_1.jpg"
       },
       {
-        "id": 5,
-        "title": "E-commerce",
-        "desc": "WORDPRESS - DIVI",
-        "img": "e-commerce/e-commerce_1.jpg"
+        "id": 6,
+        "title": "Nico's Burger",
+        "desc": "BRANDING & GRAPHISME",
+        "img": "nicos_burger/burger_3.png"
       },
       {
-        "id": 6,
+        "id": 7,
+        "title": "Audition Thiers", 
+        "desc": "FIGMA - WORDPRESS",
+        "img": "audition_thiers/audition_thiers_1.jpg"
+      },
+      {
+        "id": 8,
         "title": "Animation",
         "desc": "MOTION DESIGN",
         "img": "motion_design/motion_design_6.jpg"
       },
       {
-        "id": 7,
+        "id": 9,
         "title": "MX-Mothern",
         "desc": "DESIGN WEB",
         "img": "mx_mothern/mx_mothern_1.jpg"
+      },
+      {
+        "id": 10,
+        "title": "Vrel Gobe",
+        "desc": "DESIGN & DEV",
+        "img": "vrel_gobe/vrel_gobes_1.jpg"
       }
       
     ],
@@ -57,7 +75,8 @@
           "brief": "Avec ce projet, j'ai eu la chance de créer de A à Z l'identité visuelle d'une start-up, qui comprend un logo, une typographie et des couleurs, ainsi que divers supports de communication comme des cartes de visite, des flyers abribus, des flyers et des en-têtes de document.",
           "concept": " J'étais très enthousiaste de créer une identité visuelle personnalisée pour une start-up spécialisée dans les crypto-monnaies, qui nous a permis d'avoir une charte graphique complète.",
           "tools" : ["Adobe Illustrator", "Adobe Indesign", "Adobe photoshop"],
-          "bg_img": "virtual/virtual_mockup_ombre.jpg"
+          "bg_img": "virtual/virtual_mockup_ombre.jpg",
+          "link_project": "https://www.behance.net/gallery/158739389/Branding-Identity-Virtual"
         },
         "galeries": ["virtual/carte_visite_entete_virtual.jpg", "virtual/affiche_abribus_virtual.jpg", "virtual/flyer_virtual.jpg"]
       },
@@ -73,7 +92,8 @@
           "brief": "Nous étions ravis de travailler sur la création d'une maquette pour un site web e-commerce de vente de plantes d'intérieur pour entreprises et particuliers. Nous nous étions engagés à respecter les critères d'harmonisation Feng shui des plantes proposées.",
           "concept": "L'objectif était de proposer aux entreprises et aux particuliers des aménagements paysagers d'intérieur pour transformer leurs espaces de travail en lieux Feng Shui où le travail devient agréable. Nous voulions améliorer notre conception d'un site web e-commerce avec certains critères imposés.",
           "tools" : ["Adobe XD", "Behances"],
-          "bg_img": "plantoburo/mockup_plantoburo.jpg"
+          "bg_img": "plantoburo/mockup_plantoburo.jpg",
+          "link_project": "https://www.behance.net/gallery/159585521/Plantoburo-Plants-Shop"
         },
         "galeries": ["plantoburo/plantoburo_3.jpg", "plantoburo/plantoburo_5.jpg", "plantoburo/plantoburo_1.jpg"]
       },
@@ -89,12 +109,30 @@
           "brief": "J'ai pu créer une charte graphique complète, comprenant un logo, une typographie et des couleurs à mon image, ainsi que des supports de communication tels que des cartes de visite et des flyers pour m’aider à faire passer mon message !",
           "concept": "Créer sa propre identité visuelle, c'est s'affirmer avec assurance et se démarquer en transmettant avec conviction sa personnalité et ses valeurs à travers des choix judicieux de couleurs, de typographies et d'images.",
           "tools" : ["Adobe XD", "Adobe Illustrator", "Adobe Indesign", "Adobe photoshop"],
-          "bg_img": "self_branding/mockup_ombre.jpg"
+          "bg_img": "self_branding/mockup_ombre.jpg",
+          "link_project": ""
         },
         "galeries": ["self_branding/self_branding_3.jpg", "self_branding/self_branding_4.jpg", "self_branding/self_branding_5.jpg"]
       },
       {
         "id": 4,
+        "img_bg_hero": "creaspark/creaspark_1.png",
+        "title": "Creaspark",
+        "spe": "DESIGN / DEV",
+        "desc": "Mon frère et moi avons créé le site web de notre agence digitale. Ce site constitue notre vitrine virtuelle, où nous présentons aux entreprises nos services pour les aider à croître et à se faire connaître dans le domaine du numérique. J'ai également pu concevoir et de designer les cartes de visite de Creaspark.",
+        "details": {
+          "name": "Creaspark",
+          "realisation": "PROJET CHEZ CREASPARK",
+          "brief": "Nous avons cherché à concevoir un site internet qui ne soit pas basique, contrairement à ce que l'on voit habituellement. Notre objectif était de créer une expérience interactive pour le client, en mettant en avant l'authenticité de notre démarche.",
+          "concept": "Pour le site Creaspark, j'ai principalement pris en charge le design et la création des maquettes sur Figma, puis je l'ai développé sur Webflow. Nous avons travaillé à deux pour le développer, étant donné le temps considérable que nous avons investi pour le concevoir.",
+          "tools" : ["Figma", "Webflow", "Adobe Indesign"],
+          "bg_img": "creaspark/creaspark_2.jpg",
+          "link_project": "https://www.creaspark.fr/"
+        },
+        "galeries": ["creaspark/creaspark_3.png", "creaspark/creaspark_4.png", "creaspark/creaspark_5.jpg"]
+      },
+      {
+        "id": 5,
         "img_bg_hero": "trombinoscope/trombinoscope_1.jpg",
         "title": "Trombinoscope",
         "spe": "DESIGN / DEV",
@@ -105,28 +143,47 @@
           "brief": "Nous avons créé une application de trombinoscope qui aide les étudiants et les enseignants à stocker facilement les informations personnelles des membres de la classe. Nous avons commencé par créer une maquette qui nous donnait une idée de ce que serait le produit final, une fois développé en utilisant PHP/SQL.",
           "concept": "Ce projet consiste à créer une application de trombinoscope pour les étudiants et les enseignants d'une classe scolaire. Avec cette application, la communauté scolaire pourra facilement stocker et consulter les informations de contact de chaque membre de la classe dans un seul endroit. Nous espérons que cette application sera utile pour les communautés scolaires et nous nous réjouissons de voir tous les avantages qu'elle peut offrir !",
           "tools" : ["Adobe XD", "PHP", "SQL"],
-          "bg_img": "trombinoscope/trombinoscope_2.jpg"
+          "bg_img": "trombinoscope/trombinoscope_2.jpg",
+          "link_project": ""
         },
         "galeries": ["trombinoscope/trombinoscope_3.jpg", "trombinoscope/trombinoscope_4.jpg", "trombinoscope/trombinoscope_5.jpg"]
       },
       {
-        "id": 5,
-        "img_bg_hero": "e-commerce/e-commerce_2.jpg",
-        "title": "E-commerce",
-        "spe": "THEME BUILDER",
-        "desc": "Ce projet consiste à concevoir un site web e-commerce sur la thématique de notre choix et à le développer avec le CMS WordPress. J'ai opté pour un site de vente de vêtements de luxe.",
+        "id": 6,
+        "img_bg_hero": "nicos_burger/burger_3.png",
+        "title": "Nico's Burger",
+        "spe": "BRANDING / GRAPHISME",
+        "desc": "J'ai développé une marque fictive pour un fast-food de burgers dans le cadre d'un projet scolaire, mettant l'accent sur le branding et le graphisme. Nous avons suivi un cahier des charges établi par un client fictif.",
         "details": {
-          "name": "E-commerce",
+          "name": "Nico's Burger",
           "realisation": "PROJET SCOLAIRE",
-          "brief": "Création d'un modèle de boutique en ligne avec Wordpress, WooCommerce et le thème DIVI. Le choix des produits à vendre et le nombre de produits était libre.",
-          "concept": "Ce projet visait à concevoir un site e-commerce sur WordPress, en utilisant le thème builder DIVI et WooCommerce. Son objectif était de nous familiariser avec ces deux outils et de nous permettre de travailler de manière plus approfondie.",
-          "tools" : ["Wordpress", "DIVI", "WooCommerce"],
-          "bg_img": "e-commerce/e-commerce_4.jpg"
+          "brief": "Dans le cadre de ce projet, nous avons dû créer une marque fictive de fast food spécialisé dans les burgers. Nous avons élaboré un processus complet, incluant la création d'un profil client fictif, l'élaboration d'un moodboard, la conception d'un logo, ainsi que le développement de divers supports de communication.",
+          "concept": "Dans ce projet, j'ai débuté en créant un moodboard pour le client fictif, afin de nous orienter dans la bonne direction dès le départ. Ensuite, j'ai pu concevoir un logo avec ses déclinaisons, ainsi que des cartes de visite, des cartes de fidélité et des emballages pour les produits.",
+          "tools" : ["Figjam", "Adobe Illustrator", "Adobe Indesign"],
+          "bg_img": "nicos_burger/burger_2.png",
+          "link_project": ""
         },
-        "galeries": ["e-commerce/e-commerce_3.jpg", "e-commerce/e-commerce_6.jpg", "e-commerce/e-commerce_5.jpg"]
+        "galeries": ["nicos_burger/burger_5.png", "nicos_burger/burger_4.png", "nicos_burger/burger_1.png"]
       },
       {
-        "id": 6,
+        "id": 7,
+        "img_bg_hero": "audition_thiers/audition_thiers_1.jpg",
+        "title": "Audition Thiers",
+        "spe": "FIGMA / WORDPRESS",
+        "desc": "Ce projet consistait à concevoir un site web vitrine pour un audioprothésiste basé au Havre. Il voulait avoir quelque chose de plus moderne et dynamique.",
+        "details": {
+          "name": "Audition Thiers",
+          "realisation": "PROJET PROFESIONNEL",
+          "brief": "Dans le cadre de ce projet, mon objectif était de réaliser une refonte du site web d'un audioprothésiste. Son souhait était d'avoir un site plus moderne, actualisé et dynamique.",
+          "concept": "Dans ce projet, j'ai commencé par conceptualiser le site en créant une maquette sur Figma. Cela a permis au client de visualiser son futur site et de proposer rapidement des modifications. Ensuite, j'ai développé le site sur WordPress en utilisant Elementor Pro.",
+          "tools" : ["Figma", "Wordpress", "Elementor Pro"],
+          "bg_img": "audition_thiers/audition_thiers_2.png",
+          "link_project": ""
+        },
+        "galeries": ["audition_thiers/audition_thiers_3.jpg", "audition_thiers/audition_thiers_5.jpg", "audition_thiers/audition_thiers_4.jpg"]
+      },
+      {
+        "id": 8,
         "img_bg_hero": "motion_design/animation-min.gif",
         "title": "Animation",
         "spe": "MOTION DESIGN",
@@ -137,12 +194,13 @@
           "brief": "Création d'une vidéo Gif pour une entreprise, sur After Effects en motion design.",
           "concept": "Ce projet visait à créer une vidéo Gif en motion design sur After Effects avec un ton amical. Il m'a permis de mettre en pratique mes compétences en animation et de développer de nouvelles techniques.",
           "tools" : ["Adobe After Effect", "Adobe Illustrator"],
-          "bg_img": "motion_design/motion_design_1.jpg"
+          "bg_img": "motion_design/motion_design_1.jpg",
+          "link_project": ""
         },
         "galeries": ["motion_design/animation-min.gif", "motion_design/motion_design_5.jpg", "motion_design/motion_design_6.jpg"]
       },
       {
-        "id": 7,
+        "id": 9,
         "img_bg_hero": "mx_mothern/mx_mothern_3.jpg",
         "title": "MX-Mothern",
         "spe": "WEB DESIGN",
@@ -153,9 +211,27 @@
           "brief": "Création de l'identité visuelle et du site web de MX-Mothern, une entreprise spécialisée dans les articles de motos. Cela impliquait la réalisation d'une charte graphique, d'une maquette web, et le développement du site MX-Mothern sur la plateforme WordPress.",
           "concept": "Le but de ce projet était de concevoir l'identité visuelle de MX-Mothern, ainsi que de construire le site web depuis les bases. Cela m'a donné l'occasion d'accroître ma créativité et d'explorer davantage WordPress.",
           "tools" : ["Adobe Illustrator", "Adobe XD", "Wordpress", "Elementor Pro"],
-          "bg_img": "mx_mothern/mx_mothern_5.jpg"
+          "bg_img": "mx_mothern/mx_mothern_5.jpg",
+          "link_project": ""
         },
         "galeries": ["mx_mothern/mx_mothern_4.jpg", "mx_mothern/mx_mothern_1.jpg", "mx_mothern/mx_mothern_2.jpg"]
+      },
+      {
+        "id": 10,
+        "img_bg_hero": "vrel_gobe/vrel_gobes_1.jpg",
+        "title": "Vrel Gobe",
+        "spe": "DESIGN / DEV",
+        "desc": "Réalisation d'un site vitrine pour une entreprise de menuiserie, effectuée lors de mon stage de deuxième année chez Dinamicom.",
+        "details": {
+          "name": "Vrel Gobe",
+          "realisation": "PROJET STAGE",
+          "brief": "Le client, un menuisier, ne disposait pas de site internet et souhaitait en créer un pour toucher un public plus large. Il désirait quelque chose d'actuel et reflétant son image de marque.",
+          "concept": "Création d'un site web lors de mon stage de deuxième année chez Dinamicom. J'ai d'abord réalisé une maquette simple sur Figma pour la présenter au client, avant de passer au développement sur Wordpress.",
+          "tools" : ["Figma", "Wordpress", "Elementor Pro"],
+          "bg_img": "vrel_gobe/vrel_gobes_2.jpg",
+          "link_project": "https://www.vrel-gobe.fr/"
+        },
+        "galeries": ["vrel_gobe/vrel_gobes_3.jpg", "vrel_gobe/vrel_gobes_5.jpg", "vrel_gobe/vrel_gobes_4.jpg"]
       }
     ]
   }

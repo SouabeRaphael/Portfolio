@@ -130,14 +130,14 @@ function slider(slide){
 
 
     btnNext.addEventListener('click', () => {
-        currentPosition -= 30;
+        currentPosition -= 40;
         test -= 20;
 
-        calcLimit = Math.max(Math.min(currentPosition, 0), -90);
+        calcLimit = Math.max(Math.min(currentPosition, 0), -176);
         position = `translate(${calcLimit}%, 0%)`;
 
-        if(calcLimit == -90){
-            currentPosition = -90;
+        if(calcLimit == -176){
+            currentPosition = -176;
             test = 40;
         }
 
@@ -153,7 +153,7 @@ function slider(slide){
             }
 
         line_scroll.animate({
-            width: `${3 + -calcLimit / 2.5}%`}, {
+            width: `${3 + -calcLimit / 4.9}%`}, {
             duration: 800, fill: "forwards"});
 
     })
@@ -162,7 +162,7 @@ function slider(slide){
         currentPosition += 30;
         test += 10;
 
-        calcLimit = Math.max(Math.min(currentPosition, 0), -90);
+        calcLimit = Math.max(Math.min(currentPosition, 0), -176);
         position = `translate(${calcLimit}%, 0%)`;
 
         if(calcLimit == 0){
@@ -182,7 +182,7 @@ function slider(slide){
             }
         
         line_scroll.animate({
-            width: `${3 + -calcLimit / 2.5}%`}, {
+            width: `${3 + -calcLimit / 4.9}%`}, {
             duration: 800, fill: "forwards"});
     })
 
@@ -201,7 +201,7 @@ function slider(slide){
 
         const percentage = (mouseDelta / maxDelta) * -100,
             nextPercentageUnconstrained = parseFloat(slide.dataset.prevPercentage) + percentage,
-            nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -90);
+            nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -176);
 
         slide.dataset.percentage = nextPercentage;
         // slide.style.transform = `translate(${nextPercentage}%, 0%)`;
@@ -218,7 +218,7 @@ function slider(slide){
 
         // line_scroll.style.width = `${5 + -nextPercentage / 2}%`;
         line_scroll.animate({
-            width: `${3 + -nextPercentage / 2.5}%`}, {
+            width: `${3 + -nextPercentage / 4.9}%`}, {
                 duration: 800, fill: "forwards"});
 
     }
